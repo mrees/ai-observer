@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Observer — Briefing Archive</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f7f5f0;
+    }
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    header {
+      border-bottom: 3px solid #1a1a2e;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+    }
+    .masthead {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 6px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #555; }
+
+    /* ── Search ── */
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    #searchInput {
+      flex: 1;
+      padding: 10px 14px;
+      font-size: 15px;
+      font-family: inherit;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      outline: none;
+    }
+    #searchInput:focus { border-color: #1a1a2e; }
+    #clearBtn {
+      padding: 10px 16px;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: inherit;
+    }
+    #clearBtn:hover { background: #2e4057; }
+
+    #noResults {
+      display: none;
+      font-style: italic;
+      color: #888;
+      padding: 16px 0;
+    }
+
+    /* ── Briefing list ── */
+    .briefing-list { list-style: none; }
+    .briefing-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-left: 5px solid #1a1a2e;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      transition: border-left-color 0.15s;
+    }
+    .briefing-item:hover { border-left-color: #2980b9; }
+    .briefing-item.hidden { display: none; }
+    .briefing-link {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #1a5276;
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+    .briefing-link:hover { text-decoration: underline; }
+    .briefing-date { font-size: 13px; color: #888; }
+
+    /* ── Highlight match ── */
+    mark { background: #fff3cd; color: #1a1a2e; border-radius: 2px; padding: 0 2px; }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <header>
+    <p class="masthead">AI Observer</p>
+    <h1>Briefing Archive</h1>
+    <p class="subtitle">Weekly intelligence on frontier AI models and tools. Use the search box below to locate briefings by keyword.</p>
+  </header>
+
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search briefing titles&hellip;" aria-label="Search briefings" />
+    <button id="clearBtn" onclick="clearSearch()">Clear</button>
+  </div>
+  <p id="noResults">No briefings match your search. Try a different keyword.</p>
+
+  <!-- Briefing list -->
+  <!-- ARCHIVE-LIST-START -->
+  <ul class="briefing-list" id="briefingList">
+
+    <li class="briefing-item" data-title="Week of 12 April 2026 Claude Mythos Gemini 3.1 GPT-5.5 Grok 4.20 GLM-5.1 Claude Code Cursor GitHub Copilot MCP robotics NVIDIA">
+      <a class="briefing-link" href="AI-Observer-2026-04-12.html">Week of 12 April 2026</a>
+      <span class="briefing-date">12 April 2026 &mdash; Claude Mythos gated release &bull; Gemini 3.1 Pro leads 13 benchmarks &bull; GPT-5.5 pretraining complete &bull; Grok 4.20 multi-agent &bull; GLM-5.1 open-source 744B &bull; Claude Code reaches #1 &bull; MCP at 97M installs &bull; NVIDIA physical AI announcements</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 5 April 2026 GPT-5.4 Claude Sonnet 4.6 Gemma 4 Llama 4 Grok 4.20 Copilot agentic AI">
+      <a class="briefing-link" href="AI-Observer-2026-04-05.html">Week of 5 April 2026</a>
+      <span class="briefing-date">5 April 2026 &mdash; GPT-5.4 surpasses human benchmark &bull; Claude Sonnet 4.6 released &bull; Google Gemma 4 open models &bull; Meta Llama 4 launch &bull; Grok 4.20 multi-agent reasoning &bull; Microsoft Copilot shifts to paid model</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 30 March 2026 Claude Mythos Gemini 3 Deep Think Sora API security">
+      <a class="briefing-link" href="AI-Observer-2026-03-30.html">Week of 30 March 2026</a>
+      <span class="briefing-date">30 March 2026 &mdash; Claude Mythos leak &bull; Gemini 3 Deep Think live &bull; Chinese state hacker incident &bull; Sora API discontinued</span>
+    </li>
+
+  </ul>
+  <!-- ARCHIVE-LIST-END -->
+
+  <footer>
+    <p>AI Observer &mdash; Automated weekly briefing archive.</p>
+  </footer>
+
+</div>
+
+<script>
+  const input = document.getElementById('searchInput');
+  const items = document.querySelectorAll('.briefing-item');
+  const noResults = document.getElementById('noResults');
+
+  function clearSearch() {
+    input.value = '';
+    filterBriefings('');
+    input.focus();
+  }
+
+  function highlight(text, term) {
+    if (!term) return text;
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark>$1</mark>');
+  }
+
+  function filterBriefings(term) {
+    const q = term.toLowerCase().trim();
+    let visibleCount = 0;
+
+    items.forEach(item => {
+      const titleEl = item.querySelector('.briefing-link');
+      const dateEl  = item.querySelector('.briefing-date');
+      const searchText = item.dataset.title.toLowerCase();
+
+      if (!q || searchText.includes(q)) {
+        item.classList.remove('hidden');
+        visibleCount++;
+        // Restore original text then highlight
+        titleEl.innerHTML = highlight(titleEl.textContent, term);
+      } else {
+        item.classList.add('hidden');
+        titleEl.innerHTML = titleEl.textContent; // reset
+      }
+    });
+
+    noResults.style.display = (q && visibleCount === 0) ? 'block' : 'none';
+  }
+
+  input.addEventListener('input', () => filterBriefings(input.value));
+
+  // Keyboard shortcut: Escape clears search
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') clearSearch();
+  });
+</script>
+</body>
+</html>

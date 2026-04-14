@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Observer — Weekly Briefing: 5 April 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #1a1a2e;
+      background: #f7f5f0;
+    }
+    .page-wrap { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    header {
+      border-bottom: 3px solid #1a1a2e;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+    }
+    .masthead {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .meta { font-size: 14px; color: #555; }
+
+    h2 {
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-top: 2px solid #1a1a2e;
+      padding-top: 18px;
+      margin: 40px 0 20px;
+    }
+
+    .story {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-left: 5px solid #1a1a2e;
+      border-radius: 4px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+    .story h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .story p { font-size: 15px; color: #333; margin-bottom: 10px; }
+    .story a {
+      font-size: 13px;
+      color: #2a52be;
+      text-decoration: none;
+      border-bottom: 1px dotted #2a52be;
+    }
+    .story a:hover { color: #1a1a2e; }
+
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      font-family: Arial, sans-serif;
+    }
+    .tag-frontier { background: #1a1a2e; color: #fff; }
+    .tag-tools    { background: #2a52be; color: #fff; }
+    .tag-analysis { background: #5c7a3e; color: #fff; }
+
+    footer {
+      margin-top: 60px;
+      border-top: 2px solid #1a1a2e;
+      padding-top: 16px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <header>
+    <p class="masthead">AI Observer &mdash; Weekly Briefing</p>
+    <h1>AI Frontier &amp; Tools Update</h1>
+    <p class="meta">Sunday, 5 April 2026 &nbsp;|&nbsp; Week 14</p>
+  </header>
+
+  <!-- ── FRONTIER MODELS ── -->
+  <h2>Frontier Models</h2>
+
+  <div class="story">
+    <span class="tag tag-frontier">OpenAI</span>
+    <h3>GPT-5.4 Surpasses Human Performance on Desktop Tasks</h3>
+    <p>OpenAI's current flagship, GPT-5.4 Thinking, has exceeded human-level performance on the OSWorld-Verified benchmark (75% vs. a human baseline of 72.4%), marking a milestone shift from AI as a chat assistant toward AI as an autonomous digital coworker. The model supports a 1-million-token context window and can execute multi-step workflows autonomously. OpenAI has also begun rolling out ChatGPT integration into Apple CarPlay and expanded app actions for Box, Notion, Linear, and Dropbox. Separately, OpenAI has crossed $25 billion in annualised revenue and is reportedly exploring a public listing as soon as late 2026. Its next model, GPT-5.5 (internally known as "Spud"), has completed pre-training.</p>
+    <a href="https://openai.com/news/" target="_blank">OpenAI News &rarr;</a>
+  </div>
+
+  <div class="story">
+    <span class="tag tag-frontier">Anthropic</span>
+    <h3>Claude Sonnet 4.6 Released; "Claude Mythos" in Internal Testing</h3>
+    <p>Anthropic launched Claude Sonnet 4.6, featuring improved agentic search, a 1-million-token context window (beta), and reduced token consumption. The company raised the max_tokens cap to 300k on the Message Batches API for its flagship models, and has made web search and programmatic tool calling generally available without requiring a beta header. Claude Haiku 3 is being retired on 19 April 2026; users are advised to migrate to Haiku 4.5. Internally, Anthropic is testing a model codenamed "Claude Mythos," described as a step-change in capabilities, with a possible Q2 2026 release. Separately, Anthropic has ended support for third-party agentic tools (such as OpenClaw) under Claude Pro/Max subscriptions, citing infrastructure strain.</p>
+    <a href="https://www.anthropic.com/news" target="_blank">Anthropic News &rarr;</a>
+    &nbsp;|&nbsp;
+    <a href="https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/" target="_blank">TechCrunch: OpenClaw billing change &rarr;</a>
+  </div>
+
+  <div class="story">
+    <span class="tag tag-frontier">Google DeepMind</span>
+    <h3>Gemma 4 Open Models Released; Gemini 3.1 Ultra Unveiled</h3>
+    <p>Google released Gemma 4 in four sizes (2B, 4B, 26B MoE, 31B Dense) under an Apache 2.0 licence, making it freely available for commercial use. The 31B model currently ranks third among all open models on the Arena AI leaderboard. Gemma 4 is natively multilingual (140+ languages) and designed for agentic workflows. It is also available through the Android AICore Developer Preview. In addition, Google unveiled Gemini 3.1 Ultra with a 2-million-token context window spanning text, image, audio, and video, and a built-in sandboxed code execution tool.</p>
+    <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/" target="_blank">Google Blog: Gemma 4 &rarr;</a>
+    &nbsp;|&nbsp;
+    <a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html" target="_blank">Android Developers Blog &rarr;</a>
+  </div>
+
+  <div class="story">
+    <span class="tag tag-frontier">Meta</span>
+    <h3>Llama 4 Officially Launched; LlamaCon Set for 29 April</h3>
+    <p>Meta formally introduced the Llama 4 model family: Scout, Maverick, and the previewed Behemoth. Scout and Maverick are the first open-weight natively multimodal Llama models and use a mixture-of-experts (MoE) architecture for greater efficiency. Maverick is positioned as the general-purpose workhorse for chat and image understanding. Meta has also awarded $1.5 million to 10 international recipients through its Llama Impact Grants programme. LlamaCon, Meta's first developer conference for the Llama ecosystem, is scheduled for 29 April 2026.</p>
+    <a href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank">Meta AI Blog: Llama 4 &rarr;</a>
+    &nbsp;|&nbsp;
+    <a href="https://ai.meta.com/blog/llamacon-llama-news/" target="_blank">LlamaCon Announcements &rarr;</a>
+  </div>
+
+  <div class="story">
+    <span class="tag tag-frontier">xAI / Mistral</span>
+    <h3>Grok 4.20 Introduces Multi-Agent Parallel Reasoning; Grok 5 Targeted for Q2</h3>
+    <p>xAI's Grok 4.20 introduces a novel multi-agent inference architecture: four specialised internal agents (covering fact-checking, logic/coding, creative reasoning, and coordination) run in parallel on every complex query and debate before producing a single answer. This is built into the inference layer rather than exposed as a user-facing framework. xAI has also recruited Devendra Singh Chaplot, a robotics researcher and Mistral AI co-founder, to work directly on Grok model training. Grok 5 is targeted for Q2 2026. Mistral's open-source ecosystem continues to grow, with Mistral Small 4 released in early March 2026.</p>
+    <a href="https://x.ai/news" target="_blank">xAI News &rarr;</a>
+    &nbsp;|&nbsp;
+    <a href="https://mistral.ai/news" target="_blank">Mistral AI News &rarr;</a>
+  </div>
+
+  <!-- ── AI TOOLS ── -->
+  <h2>AI Tools &amp; Platforms</h2>
+
+  <div class="story">
+    <span class="tag tag-tools">Microsoft</span>
+    <h3>Copilot Shifts to Paid Model; Multi-Agent Orchestration Now Generally Available</h3>
+    <p>Microsoft has moved Copilot from a bundled offering to a standalone paid product, responding to investor feedback. Starting 15 April, Copilot Chat will no longer be included in Word, Excel, PowerPoint, and OneNote for large enterprise customers. Copilot Studio's multi-agent orchestration features are now generally available to all eligible customers, with further updates expected across voice channels and workflow automation. March 2026 also brought new features such as video recap in Copilot Chat and global audio recaps in Teams.</p>
+    <a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/" target="_blank">Microsoft Copilot Blog &rarr;</a>
+    &nbsp;|&nbsp;
+    <a href="https://www.bloomberg.com/news/articles/2026-04-02/microsoft-hit-audacious-copilot-goals-after-wall-street-input" target="_blank">Bloomberg: Copilot sales strategy &rarr;</a>
+  </div>
+
+  <div class="story">
+    <span class="tag tag-tools">GitHub / Zapier</span>
+    <h3>Agentic Tools Move to Production; GitHub Copilot Gets MCP Support</h3>
+    <p>GitHub is rolling out Agent Mode with Model Context Protocol (MCP) support to all Visual Studio Code users, transforming Copilot from a code-completion tool into a fully agentic development partner capable of planning and executing multi-step coding tasks. Zapier, with over 8,000 app integrations, has launched Zapier Agents and Copilot, allowing users to describe automation workflows in plain English. Enterprise adoption of agentic AI accelerated at GTC 2026, where Fortune 500 firms announced production deployments across manufacturing, logistics, and finance.</p>
+    <a href="https://zapier.com/blog/best-ai-productivity-tools/" target="_blank">Zapier: AI Productivity Tools &rarr;</a>
+  </div>
+
+  <!-- ── ANALYSIS ── -->
+  <h2>Analysis &amp; Commentary</h2>
+
+  <div class="story">
+    <span class="tag tag-analysis">Stratechery</span>
+    <h3>Ben Thompson: "We Are Not in a Bubble"</h3>
+    <p>Ben Thompson revised his earlier cautious stance, concluding in his recent analysis that AI investment is not bubble-driven. He identifies three LLM inflection points — starting with ChatGPT's launch in November 2022 — and argues that Nvidia and Oracle earnings confirm sustained, real enterprise demand. His piece "Agents Over Bubbles" examines why the shift to agentic AI represents structural rather than speculative growth.</p>
+    <a href="https://stratechery.com/2026/agents-over-bubbles/" target="_blank">Stratechery: Agents Over Bubbles &rarr;</a>
+  </div>
+
+  <div class="story">
+    <span class="tag tag-analysis">Simon Willison</span>
+    <h3>AI Coding Crosses the "Actually Works" Threshold</h3>
+    <p>Developer and commentator Simon Willison, speaking on Lenny's Podcast and in his March 2026 newsletter, argues that November 2025 was the moment AI coding agents moved from "mostly works" to "actually works." He predicts that by end of 2026, half of all software engineers will write 95% of their code with AI assistance. He also coined the term "agentic engineering" and describes a "dark factory" pattern in software development where human oversight is minimal and AI handles the full development loop.</p>
+    <a href="https://simonwillison.net/2026/Apr/2/march-newsletter/" target="_blank">Simon Willison's Newsletter &rarr;</a>
+    &nbsp;|&nbsp;
+    <a href="https://www.lennysnewsletter.com/p/an-ai-state-of-the-union" target="_blank">Lenny's Newsletter: AI State of the Union &rarr;</a>
+  </div>
+
+  <footer>
+    <p>AI Observer &mdash; Automated Weekly Briefing &mdash; 5 April 2026. Sources include OpenAI, Anthropic, Google DeepMind, Meta AI, xAI, Mistral, Microsoft, GitHub, Zapier, Stratechery, and Simon Willison's Newsletter.</p>
+  </footer>
+
+</div>
+</body>
+</html>
