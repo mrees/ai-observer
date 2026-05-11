@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Observer — Week of 3 May 2026</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+      color: #222;
+      background: #fafaf8;
+      line-height: 1.7;
+    }
+    header {
+      border-bottom: 2px solid #1a1a2e;
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      margin: 0 0 4px;
+      color: #1a1a2e;
+    }
+    header p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: #1a1a2e;
+      border-left: 4px solid #2980b9;
+      padding-left: 12px;
+      margin: 36px 0 14px;
+    }
+    h3 {
+      font-size: 1rem;
+      color: #1a1a2e;
+      margin: 20px 0 6px;
+    }
+    p { margin: 0 0 14px; }
+    a { color: #1a5276; }
+    a:hover { text-decoration: underline; }
+    .lead {
+      font-size: 1.05rem;
+      color: #333;
+      border-left: 4px solid #ccc;
+      padding-left: 16px;
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+    .source-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      background: #eef2f7;
+      color: #555;
+      border-radius: 3px;
+      padding: 1px 7px;
+      margin-left: 6px;
+      vertical-align: middle;
+      font-style: normal;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 32px 0;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 18px;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 28px;
+      font-size: 0.9rem;
+      color: #1a5276;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .tag-bar {
+      margin-bottom: 20px;
+      font-size: 0.82rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back-link" href="index.html">← Back to Archive</a>
+
+  <header>
+    <p style="font-size:0.8rem; letter-spacing:0.12em; text-transform:uppercase; color:#888; margin-bottom:6px;">AI Observer &mdash; Weekly Briefing</p>
+    <h1>Week of 3 May 2026</h1>
+    <p>Frontier models, AI tools, and industry trends &mdash; curated each Sunday.</p>
+  </header>
+
+  <p class="lead">This week: GPT-5.5 arrives on Amazon Bedrock and sets a new agentic coding benchmark; Anthropic ships Claude Opus 4.7 with enhanced vision and previews the ultra-capable Mythos; Google's Gemini 3 Deep Think targets science and engineering; enterprise agentic AI adoption widens while governance gaps persist.</p>
+
+  <div class="tag-bar">Topics: GPT-5.5 &bull; Claude Opus 4.7 &bull; Claude Mythos &bull; Claude Security &bull; Gemini 3 Deep Think &bull; Deep Research Max &bull; Gemini Embeddings 2 &bull; Mistral Large 3 &bull; Llama &bull; Grok &bull; Microsoft Agent 365 &bull; AWS Amazon Quick &bull; agentic AI governance &bull; enterprise AI adoption</div>
+
+  <hr class="section-divider">
+
+  <!-- ── FRONTIER MODELS ── -->
+  <h2>Frontier Models</h2>
+
+  <h3>OpenAI: GPT-5.5 now on Amazon Bedrock</h3>
+  <p>Released on 23 April, GPT-5.5 is OpenAI's latest frontier model — the sixth major release in under four months. It excels at multi-step agentic tasks, including code writing, debugging, online research, and document creation. GPT-5.5 Thinking is available to paid ChatGPT subscribers; the model is also rolling out on Amazon Bedrock. <a href="https://fortune.com/2026/04/23/openai-releases-gpt-5-5/" target="_blank">Fortune</a> <span class="source-tag">OpenAI</span></p>
+
+  <h3>Anthropic: Claude Opus 4.7 generally available; Mythos preview continues</h3>
+  <p>Claude Opus 4.7 is Anthropic's most capable generally available model. It brings substantially improved vision (higher-resolution image understanding), stronger instruction-following, and higher-quality document and interface generation. Pricing is unchanged at $5 / $25 per million tokens (input/output). Available on claude.ai, the API, Amazon Bedrock, Google Vertex AI, and Microsoft Foundry. <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Anthropic</a> <span class="source-tag">Anthropic</span></p>
+  <p>Separately, <strong>Claude Security</strong> — a public beta tool for scanning and patching code vulnerabilities — launched for Claude Enterprise customers, built on Opus 4.7. Anthropic also expanded creative integrations to Blender, Adobe, Autodesk, Ableton, and Splice via new connectors, and introduced <strong>Claude Design</strong> for rapid idea exploration. <a href="https://www.infosecurity-magazine.com/news/anthropic-claude-security-for-ai/" target="_blank">Infosecurity Magazine</a></p>
+  <p>The <strong>Claude Mythos</strong> preview remains accessible to a select group of enterprise partners via Project Glasswing, Anthropic's cybersecurity initiative. Mythos is described as representing a step-change in reasoning and coding capability. <a href="https://red.anthropic.com/2026/mythos-preview/" target="_blank">Anthropic Red Team</a> <span class="source-tag">Anthropic</span></p>
+
+  <h3>Google DeepMind: Gemini 3 Deep Think and Deep Research Max</h3>
+  <p><strong>Gemini 3 Deep Think</strong> is a major upgrade aimed at science, research, and engineering challenges, showing more than 50% improvement over Gemini 2.5 Pro on solved benchmark tasks. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" target="_blank">Google Blog</a> <span class="source-tag">Google DeepMind</span></p>
+  <p><strong>Deep Research Max</strong> (launched 21 April) is a new agent built on Gemini 3.1 Pro, offering MCP support and native visualisations for long-horizon research workflows. A lighter variant optimises for speed and cost in interactive surfaces. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/" target="_blank">Google Blog</a></p>
+  <p><strong>Gemini Embeddings 2</strong> is an omnimodal representation model that maps text, images, video, audio, and PDFs into a single unified embedding space — designed to improve retrieval across mixed-media corpora.</p>
+
+  <hr class="section-divider">
+
+  <!-- ── OTHER MODEL PROVIDERS ── -->
+  <h2>Other Model Providers</h2>
+
+  <h3>Mistral AI: async coding and Le Chat Work mode</h3>
+  <p>Mistral's latest release adds async cloud-based coding sessions, a 128B flagship model, and an agentic "Work mode" to Le Chat. Mistral Small 4 (119B MoE, 6B active parameters) — launched in March — continues to gain developer adoption as a capable open-weight reasoning and vision model. <a href="https://llm-stats.com/ai-news" target="_blank">LLM-Stats</a></p>
+
+  <h3>Meta: Muse Spark from Superintelligence Labs</h3>
+  <p>Meta's newly formed Superintelligence Labs released Muse Spark in April, a proprietary model that reportedly matches Llama 4 Maverick's reasoning quality at a fraction of the compute cost. Open-weight Llama 4 Scout and Maverick remain the most widely deployed open models for business tasks. <a href="https://llm-stats.com/ai-news" target="_blank">LLM-Stats</a></p>
+
+  <h3>xAI: Grok 5 anticipated in Q2/Q3; SpaceX acquires xAI</h3>
+  <p>Grok 5 has not yet shipped; current production models are Grok 4.20 and Grok 4.1 Fast. In a notable corporate development, SpaceX acquired xAI, folding the Grok product line into a broader entity alongside Tesla. Separately, Elon Musk testified in court that xAI trained Grok on OpenAI model outputs. <a href="https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/" target="_blank">TechCrunch</a></p>
+
+  <hr class="section-divider">
+
+  <!-- ── AI TOOLS & PLATFORMS ── -->
+  <h2>AI Tools &amp; Platforms</h2>
+
+  <h3>Microsoft Agent 365</h3>
+  <p>Launched on 1 May, Agent 365 is Microsoft's dedicated governance and security control plane for enterprise AI agents. Priced at $15 per user per month, it manages agents built on Microsoft Foundry, Copilot Studio, and third-party platforms. This marks agents moving from a feature inside existing products to a distinct product category. <a href="https://blog.mean.ceo/ai-agents-news-may-2026/" target="_blank">Mean CEO Blog</a></p>
+
+  <h3>AWS Amazon Quick</h3>
+  <p>Amazon Web Services unveiled Amazon Quick, a desktop AI assistant for productivity tasks — presentations, scheduling, and document creation. Part of AWS's broader "agentic-first" infrastructure push, with CEO Matt Garman stating that "everything is going to be remade." <a href="https://finance.yahoo.com/sectors/technology/articles/amazons-aws-bets-big-agentic-183103012.html" target="_blank">Yahoo Finance / AWS</a></p>
+
+  <hr class="section-divider">
+
+  <!-- ── INDUSTRY TRENDS ── -->
+  <h2>Industry Trends</h2>
+
+  <h3>Agentic AI: rapid gains, slow deployment</h3>
+  <p>The real-world task success rate for AI agents rose from 20% in 2025 to 77.3% today (Terminal-Bench), and agents handling cybersecurity tasks now solve problems 93% of the time, up from 15% a year ago. Yet enterprise deployment lags: only 17% of organisations have deployed agents in production, despite 60%+ planning to within two years. <a href="https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai" target="_blank">Gartner Hype Cycle</a> <span class="source-tag">Gartner</span></p>
+
+  <h3>Governance as a growth enabler</h3>
+  <p>Companies that implemented AI governance pushed 12× more projects to production, according to Databricks research. Gartner's 2026 Hype Cycle places agentic AI at the Peak of Inflated Expectations; governance, security, and cost control are now as prominent as capability in enterprise AI investment discussions. <a href="https://www.databricks.com/blog/enterprise-ai-agent-trends-top-use-cases-governance-evaluations-and-more" target="_blank">Databricks</a></p>
+
+  <h3>Market scale</h3>
+  <p>Analysts project the agentic AI market will grow from $7.8 billion today to over $52 billion by 2030. Gartner expects 40% of enterprise applications to embed AI agents by end-2026, up from under 5% in 2025. Open-source models (Mistral 3, Llama 4, DeepSeek) are now competitive with proprietary models for a wide range of business tasks. <a href="https://llm-stats.com/llm-updates" target="_blank">LLM-Stats</a></p>
+
+  <hr class="section-divider">
+
+  <footer>
+    <p>AI Observer &mdash; Automated weekly briefing &mdash; 3 May 2026.</p>
+    <p style="margin-top:6px;"><a href="index.html">← Return to archive</a></p>
+  </footer>
+
+</body>
+</html>

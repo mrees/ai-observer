@@ -3,245 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intelligence Brief — Index</title>
+  <title>AI Observer — Briefing Archive</title>
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background: #f9f7f4;
-      color: #1a1a1a;
-      max-width: 860px;
-      margin: 60px auto;
-      padding: 0 24px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f7f5f0;
     }
-    h1 {
-      font-size: 1.8rem;
-      font-weight: bold;
-      border-bottom: 2px solid #1a1a1a;
-      padding-bottom: 10px;
-      margin-bottom: 6px;
-    }
-    .subtitle {
-      font-size: 0.9rem;
-      color: #555;
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    header {
+      border-bottom: 3px solid #1a1a2e;
+      padding-bottom: 20px;
       margin-bottom: 36px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.95rem;
-    }
-    thead tr {
-      background: #1a1a1a;
-      color: #f9f7f4;
-    }
-    thead th {
-      text-align: left;
-      padding: 10px 14px;
-      font-weight: normal;
-      letter-spacing: 0.04em;
-      font-size: 0.85rem;
+    .masthead {
+      font-size: 11px;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
+      color: #666;
+      margin-bottom: 6px;
     }
-    tbody tr {
-      border-bottom: 1px solid #ddd;
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #555; }
+
+    /* ── Search ── */
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
     }
-    tbody tr:nth-child(even) {
-      background: #f0ede8;
+    #searchInput {
+      flex: 1;
+      padding: 10px 14px;
+      font-size: 15px;
+      font-family: inherit;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      outline: none;
     }
-    tbody tr:hover {
-      background: #e8e3db;
+    #searchInput:focus { border-color: #1a1a2e; }
+    #clearBtn {
+      padding: 10px 16px;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: inherit;
     }
-    td {
-      padding: 12px 14px;
-      vertical-align: top;
-    }
-    td.date {
-      white-space: nowrap;
-      font-weight: bold;
-      width: 130px;
-    }
-    td.link a {
-      color: #2a5fa5;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    td.link a:hover {
-      text-decoration: underline;
-    }
-    td.topics {
-      color: #333;
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-    footer {
-      margin-top: 48px;
-      font-size: 0.8rem;
+    #clearBtn:hover { background: #2e4057; }
+
+    #noResults {
+      display: none;
+      font-style: italic;
       color: #888;
+      padding: 16px 0;
+    }
+
+    /* ── Briefing list ── */
+    .briefing-list { list-style: none; }
+    .briefing-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-left: 5px solid #1a1a2e;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      transition: border-left-color 0.15s;
+    }
+    .briefing-item:hover { border-left-color: #2980b9; }
+    .briefing-item.hidden { display: none; }
+    .briefing-link {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #1a5276;
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+    .briefing-link:hover { text-decoration: underline; }
+    .briefing-date { font-size: 13px; color: #888; }
+
+    /* ── Highlight match ── */
+    mark { background: #fff3cd; color: #1a1a2e; border-radius: 2px; padding: 0 2px; }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
       border-top: 1px solid #ccc;
-      padding-top: 12px;
+      font-size: 13px;
+      color: #888;
     }
   </style>
 </head>
 <body>
+<div class="page-wrap">
 
-  <h1>Intelligence Brief &mdash; Index</h1>
-  <p class="subtitle">Briefs are listed in reverse chronological order. Click a date to open the full brief.</p>
+  <header>
+    <p class="masthead">AI Observer</p>
+    <h1>Briefing Archive</h1>
+    <p class="subtitle">Weekly intelligence on frontier AI models and tools. Use the search box below to locate briefings by keyword.</p>
+  </header>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Brief</th>
-        <th>Key Topics</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="date">11 May 2026</td>
-        <td class="link"><a href="brief-2026-05-11.html">11 May 2026</a></td>
-        <td class="topics">DDW 2026: restoring youthful gut microbiome via autologous FMT prevents liver cancer and reverses molecular ageing hallmarks in mice — MDM2 suppression, telomere restoration, inflammation reduction; first-in-human trials planned; Acta Cardiologica (6 May): sarcopenia — not generalised frailty — independently predicts early hospital readmission in acute heart failure via muscle dysfunction and worsened congestive status; Nature Reviews Endocrinology: comprehensive synthesis of gut–liver, gut–brain, gut–muscle, and gut–immune axes in ageing — causal links validated, inter-individual variability limits universal dietary recommendations; Elicit systematic review tool achieves PRISMA 2020 compliance — 95% search recall, 97% abstract screening, 99% data extraction across 994 Cochrane reviews; 80% time savings validated in BMC Medical Research Methodology</td>
-      </tr>
-      <tr>
-        <td class="date">10 May 2026</td>
-        <td class="link"><a href="brief-2026-05-10.html">10 May 2026</a></td>
-        <td class="topics">Nature Communications: biosymbiotic AI wearable sleeve delivers clinical-grade gait-based frailty assessment continuously in community settings (F1 0.90–0.92, no clinician required); JMIR Aging 2026: digital tools simultaneously assess frailty and nutritional status in free-living older adults — digital scales and wearables correlated &gt;0.80 with clinical measures; PLOS One 2026: gut microbiome neuroactive pathways (tryptophan, SCFAs, glutamate) linked to cognitive function and depression in older adults — first South American cohort, sex-specific bacterial mediators identified; BMC Geriatrics 2026: osteosarcopenia in older men described as "hidden vulnerability" systematically missed by standard frailty screening — nutritional strategies for bone and muscle co-management; US POINTER trial (JAMA, 2,111 participants): structured MIND diet + exercise + health monitoring programme significantly improves cognition in diverse older adults regardless of genetic risk — Alzheimer's Association moving to community-scale implementation</td>
-      </tr>
-      <tr>
-        <td class="date">9 May 2026</td>
-        <td class="link"><a href="brief-2026-05-09.html">9 May 2026</a></td>
-        <td class="topics">Annovis Bio CEO presents multi-protein Alzheimer's model at Fierce Biotech Week (12–14 May) — buntanetap Phase 2/3 results published in Nature NPJ Dementia, dose-dependent cognitive improvements and neuroinflammation reductions in pTau217-positive patients; BMC Geriatrics meta-analysis (11 studies, 9,939 participants): osteosarcopenia raises frailty odds 5.3-fold — combined bone and muscle loss linked to physical, cognitive, and social frailty; PMC 2026 meta-analysis: probiotics and synbiotics improve gut microbiota diversity in older adults (Shannon SMD = 0.76) — BDNF upregulation confirmed in probiotic RCT for adults over 65, but inter-individual variability cautions against universal recommendations; MHRA National Commission on AI in Healthcare recommendations due 2026 — 770+ responses analysed, new framework will govern AI medical devices and SaMD including digital nutrition tools; Nestlé Vital launch and BeverageDaily market analysis: $43.1bn senior nutrition market by 2032 — independent non-profit voice increasingly differentiated as commercial content accelerates</td>
-      </tr>
-      <tr>
-        <td class="date">8 May 2026</td>
-        <td class="link"><a href="brief-2026-05-08.html">8 May 2026</a></td>
-        <td class="topics">Neurology 93k-person multiethnic cohort: high-quality plant diet cuts dementia risk 12%, protective even when started after 60 — diet improvement after age 60 reduces risk 11%, unhealthy plant foods raise it 25%; Nature Reviews Endocrinology landmark review: gut microbiome's role in ageing is highly context-specific and inter-individually variable — complicates one-size-fits-all probiotic advice; Journal of Global Health: frailty and sarcopenia independently and additively predict cardiovascular disease — routine screening in primary care proposed; Elicit systematic review tool now PRISMA 2020-compliant with 95% search recall, 97% abstract screening, 80% time savings reported; Journals of Gerontology: AI-enabled wearables and virtual humans entering older adults' daily clinical care — first impressions of apps predict long-term engagement</td>
-      </tr>
-      <tr>
-        <td class="date">7 May 2026</td>
-        <td class="link"><a href="brief-2026-05-07.html">7 May 2026</a></td>
-        <td class="topics">Alzheimer's &amp; Dementia journal: Planetary Health Diet linked to 29% lower dementia risk and 2.17-year delay in onset — brain autopsy data confirms reduced neuropathology in adults mean age 79 (Rush Memory and Aging Project); 2026 Alzheimer's Facts &amp; Figures: 7.4M Americans affected, 74% aged 75+, $409B annual care costs, 99% believe brain health matters but only 9% know how to maintain it; Stanford AI Index 2026: AI now 5.8–8.8% of scientific output, life sciences AI publications up 26–28% YoY — human scientists still outperform AI agents on complex research tasks (Nature); EU AI Act third trilogue scheduled 13 May 2026 — August deadline unresolved, €63.2M EU health AI fund accessible; FoodNavigator identifies 4 big healthy ageing commercial opportunities (muscle, beverages, gut, cognition) — senior nutrition market approaching $43.1B by 2032; dignified food for seniors with dysphagia covered in FoodNavigator Asia (5 May 2026) — a largely neglected public education area</td>
-      </tr>
-      <tr>
-        <td class="date">6 May 2026</td>
-        <td class="link"><a href="brief-2026-05-06.html">6 May 2026</a></td>
-        <td class="topics">Neurology 93k-person study: high-quality plant diet cuts dementia risk 12%, unhealthy plant foods raise it 25% over 10 years — diet quality improvement in later life still protective; dual 2026 meta-analyses confirm sarcopenia is an independent cardiovascular risk factor (63% elevated CVD event risk, 2.3M participants); Age &amp; Ageing international consensus: first global standards for wearable mobility measurement in ageing populations — 20 core measures, 30 guiding principles; EU AI Act Brussels trilogue collapses 28 April — August 2026 high-risk health AI deadline holds, regulatory sandboxes due August 2026; gut microbiome <em>Prevotella copri</em> and <em>Roseburia</em> species linked to physical activity and strength in older adults (April 2026)</td>
-      </tr>
-      <tr>
-        <td class="date">5 May 2026</td>
-        <td class="link"><a href="brief-2026-05-05.html">5 May 2026</a></td>
-        <td class="topics">EU AI Act Digital Omnibus second trilogue (28 April) fails to agree — August 2026 high-risk healthcare deadline still legally binding, third trilogue set for 13 May; FMT from young mice prevents liver cancer in aged mice and reverses core ageing features including MDM2 suppression (News-Medical.Net, April 2026); protein + resistance exercise dosing thresholds defined: ≥15 g/day + 3×/week at 60–80% 1RM produces synergistic sarcopenia biomarker improvements (MDPI Biomolecules systematic review); ICFSR 2026 conference summaries published — Johns Hopkins formally integrates AI into frailty phenotyping and trial design; longevity sector funding concentration: top 5 deals = 81% of $792.9M raised over 12 months — capital shifting from drug pipelines to consumer diagnostics</td>
-      </tr>
-      <tr>
-        <td class="date">4 May 2026</td>
-        <td class="link"><a href="brief-2026-05-04.html">4 May 2026</a></td>
-        <td class="topics">Nature Reviews Endocrinology confirms GLP-1 drugs (semaglutide, tirzepatide) cause sarcopenia in older adults — up to 40% of weight lost is lean mass; international expert consensus statement: up to 45% of dementia cases preventable through diet via food–gut–brain axis (Nutrition &amp; Metabolism); MDPI Nutrients scoping review: medically tailored meals outperform telehealth and apps as tech-based nutrition interventions for older adults; wearables research for elderly grew 7.65%/year 2014–2024 — now shifting to HRV and AI integration (bibliometric analysis); Nature Methods publishes responsible AI guidelines for scientific publishing — hallucination and plagiarism risk in nutrition research flagged</td>
-      </tr>
-      <tr>
-        <td class="date">3 May 2026</td>
-        <td class="link"><a href="brief-2026-05-03.html">3 May 2026</a></td>
-        <td class="topics">MIND diet slows structural brain ageing by 2.5 years — grey matter loss 20% lower per 3-point adherence increase (1,600+ Framingham adults, Journal of Neurology Neurosurgery &amp; Psychiatry); TEAMS RCT (295 frail older adults): protein supplementation during resistance training only benefits those below 0.8 g/kg/day baseline — 10% strength gains in lowest-intake subgroup; NIH All of Us wearables dataset: 59,000 participants, 14 years Fitbit data, 39M+ step observations linked to EHR and genomics (Nature Medicine); EU AI Act high-risk medical AI instruments due Q2 2026 — August 2026 application date approaching; Consumer longevity platforms raise $700M+ in 2025–2026 — investor confidence shifts beyond drug pipelines</td>
-      </tr>
-      <tr>
-        <td class="date">2 May 2026</td>
-        <td class="link"><a href="brief-2026-05-02.html">2 May 2026</a></td>
-        <td class="topics">Alzheimer's &amp; Dementia journal: even small increases in ultra-processed food raise dementia risk independently of overall diet quality (Australian cohort, 2,100+ adults); Nature Reviews Endocrinology major synthesis: gut microbiome shapes ageing trajectory through multiple gut&ndash;organ axes — causal role still uncertain; BMC Geriatrics moderated mediation model: sarcopenia cascades to frailty via gender-specific and comorbidity-modified pathways; Nature 41.3M-paper study: AI boosts individual researcher output 3x but shrinks science&rsquo;s total topic breadth by 4.63% and cuts collaboration by 22%; FDA deregulates low-risk AI health software and wearables — diverges sharply from EU AI Act high-risk classification (August 2026 compliance)</td>
-      </tr>
-      <tr>
-        <td class="date">1 May 2026</td>
-        <td class="link"><a href="brief-2026-05-01.html">1 May 2026</a></td>
-        <td class="topics">OpenAI Prism: free GPT-5.2-powered LaTeX-native scientific writing workspace launched for all ChatGPT users; OpenAI GPT-Rosalind: frontier life sciences reasoning model released to qualified research partners (Amgen, Moderna, Allen Institute); MHRA AI Airlock: £3.6 million three-year expansion announced &mdash; UK&rsquo;s regulatory sandbox for AI medical devices scales to Phase 3; PMC RCT confirms protein supplementation during resistance training improves muscle outcomes specifically in frail older adults; Frontiers in Cardiovascular Medicine systematic review: sarcopenia raises atrial fibrillation risk by 79% &mdash; second cardiovascular signal in as many days</td>
-      </tr>
-      <tr>
-        <td class="date">30 April 2026</td>
-        <td class="link"><a href="brief-2026-04-30.html">30 April 2026</a></td>
-        <td class="topics">Monash/Alzheimer's &amp; Dementia study: ultra-processed foods raise dementia risk even within a healthy diet &mdash; 10% increase in UPF linked to worse attention and higher dementia risk; JOGH/PMC study: sarcopenia + frailty together more than double CVD risk, with frailty mediating 35% of the sarcopenia&ndash;heart disease pathway; cross-sectional study (101 older adults): <em>Prevotella copri</em> and <em>Roseburia</em> linked to physical activity and handgrip strength in older adults; MHRA MedRegs: National Commission on AI in Healthcare framework &mdash; &ldquo;safe, fast and trusted&rdquo; posture confirmed, final guidance due 2026; Manulife commits $350M to new Global Longevity Institute by 2030 &mdash; largest single institutional longevity commitment to date</td>
-      </tr>
-      <tr>
-        <td class="date">29 April 2026</td>
-        <td class="link"><a href="brief-2026-04-29.html">29 April 2026</a></td>
-        <td class="topics">Neurology 92,849-person multiethnic cohort: high-quality plant diet cuts dementia risk 7%, unhealthy plant foods raise it 6% — quality matters, not just category; Nature Medicine comment: wearables must become &ldquo;personal health custodians&rdquo; embedded in NHS England&rsquo;s 10-Year Health Plan as a global test case; FDA &amp; EMA publish joint 10-principle AI framework for drug development &mdash; the regulatory baseline for responsible AI in research; BMC Geriatrics: osteosarcopenia in older men described as a &ldquo;hidden vulnerability&rdquo; missed by standard frailty screening; XPRIZE Healthspan awards $10M each to Top 10 finalists entering one-year clinical trials of functional restoration interventions</td>
-      </tr>
-      <tr>
-        <td class="date">28 April 2026</td>
-        <td class="link"><a href="brief-2026-04-28.html">28 April 2026</a></td>
-        <td class="topics">Journal of Aging Research cross-sectional study (101 older adults, 65&ndash;85): <em>Prevotella copri</em> and <em>Roseburia</em> positively linked to MVPA and handgrip strength &mdash; gut microbiome as a physical function biomarker; Sci-Hub launches Sci-Bot AI chatbot querying 88M+ papers with citation-backed answers (alpha, April 2026); Manulife &amp; WEF UpLink &ldquo;Shaping Canada&rsquo;s Longevity Advantage&rdquo; innovation challenge opens (22 April 2026); UNC peer-reviewed AI manuscript guide names Claude, ChatGPT and Gemini with step-by-step workflows; BMC Geriatrics moderated mediation model: functional limitations account for 26% of sarcopenia&ndash;frailty pathway, handgrip strength is key moderator</td>
-      </tr>
-      <tr>
-        <td class="date">27 April 2026</td>
-        <td class="link"><a href="brief-2026-04-27.html">27 April 2026</a></td>
-        <td class="topics">Neurology 92,849-person multiethnic study: plant diet <em>quality</em> — not just plant-based eating — reduces dementia risk 7%; unhealthful plant-based diets increase risk 6%; dietary improvement in later life cuts risk 11%; FDA January 2026 guidances relax oversight of consumer wearables and AI clinical decision support software — key implications for digital nutrition tools; Manulife &amp; WEF UpLink launch Canadian Longevity Innovation Challenge (22 April 2026, $350M backing); UNC publishes practical AI manuscript guide naming Claude, ChatGPT, Gemini with step-by-step workflows; MHRA national commission on AI in healthcare regulation expected to report in 2026</td>
-      </tr>
-      <tr>
-        <td class="date">26 April 2026</td>
-        <td class="link"><a href="brief-2026-04-26.html">26 April 2026</a></td>
-        <td class="topics">PLOS One study (153 older adults, Chile): gut microbiome neuroactive pathways (tryptophan, SCFAs, glutamate) directly linked to cognitive function and depression — with sex-specific bacterial mediators; Targeting Longevity 2026 Congress (Berlin): ageing reframed as "loss of biological coordination" across mitochondria, microbiome, and immune systems; Nutrients scoping review: medically tailored meals (MTMs) have strongest clinical outcome data among technology-based nutrition interventions for older adults; NAM $1.5M Healthy Longevity Grand Prize — worldwide competition at Grand Prize phase; University of Arizona AI wearable detects early physical vulnerability in older adults for preventive intervention</td>
-      </tr>
-      <tr>
-        <td class="date">25 April 2026</td>
-        <td class="link"><a href="brief-2026-04-25.html">25 April 2026</a></td>
-        <td class="topics">Nature study maps gut bacterium (Parabacteroides goldsteinii) → GPR84 inflammation → vagal impairment → hippocampal memory decline in aged mice — and identifies dietary reversal pathways including GLP-1; Frontiers Public Health prospective cohort confirms joint dietary diversity + physical activity trajectories predict cognitive outcomes better than either alone; Frontiers launches operational AI guidance framework spanning full publication lifecycle for researchers, editors, and reviewers; MHRA National Commission member calls for tougher NHS AI evaluation standards ahead of 2026 framework publication; PMC functional foods review confirms 75+ population remains severely underrepresented in clinical trial evidence</td>
-      </tr>
-      <tr>
-        <td class="date">24 April 2026</td>
-        <td class="link"><a href="brief-2026-04-24.html">24 April 2026</a></td>
-        <td class="topics">Neurology 92k-person study confirms high-quality plant diet cuts dementia risk 12% — protective even when started late in life; Nature Reviews Endocrinology landmark review on gut microbiome and ageing trajectories; BMC Geriatrics: sarcopenia–frailty mediation model identifies handgrip strength as key moderator; Article Galaxy MCP launch enables AI agents to search and license scientific literature autonomously; EU AI Act high-risk medical AI obligations take effect August 2026</td>
-      </tr>
-      <tr>
-        <td class="date">23 April 2026</td>
-        <td class="link"><a href="brief-2026-04-23.html">23 April 2026</a></td>
-        <td class="topics">Oral microbiome OMAA Score (Nature Communications): mouth rinse predicts biological age, frailty &amp; mortality in 4,675-person NHANES study; AI Scientist v2 produces first fully AI-generated paper to pass peer review; Sarcopenia–frailty moderated mediation model confirms handgrip strength as key moderator (BMC Geriatrics); JMIR systematic review validates AI + wearables for preclinical cognitive detection in older adults; Prebiotic RCT shows measurable frailty reversal (JCI)</td>
-      </tr>
-      <tr>
-        <td class="date">22 April 2026</td>
-        <td class="link"><a href="brief-2026-04-22.html">22 April 2026</a></td>
-        <td class="topics">Neurology® 93k-person study: high-quality plant diet cuts dementia risk 12%, protective even when started in late life; Nature Reviews Endocrinology: gut microbiome may causally shape ageing trajectory; Sarcopenia obesity paradox confirmed — higher fat mass linked to lower mortality in frail older adults; Article Galaxy MCP enables AI agents to search and license 125M scientific papers; MHRA AI healthcare consultation: 770+ responses, summer 2026 report expected</td>
-      </tr>
-      <tr>
-        <td class="date">21 April 2026</td>
-        <td class="link"><a href="brief-2026-04-21.html">21 April 2026</a></td>
-        <td class="topics">NHANES target-trial study links protein &ge;1.0 g/kg/day to preserved muscle function in adults 60+; Nature Medicine COSMOS trial finds multivitamins slow epigenetic ageing clocks; EAT-Lancet diet reduces biological ageing via metabolomic pathways (npj Aging); MHRA AI healthcare regulatory rulebook due 2026; Scite MCP connects Claude and ChatGPT to 250M peer-reviewed articles</td>
-      </tr>
-      <tr>
-        <td class="date">20 April 2026</td>
-        <td class="link"><a href="brief-2026-04-20.html">20 April 2026</a></td>
-        <td class="topics">NHANES target-trial emulation confirms protein shortfall in adults 60+; Nature Reviews Endocrinology gut microbiome&ndash;ageing axes synthesis; Frontiers full-lifecycle AI publishing framework; FDA TEMPO pilot creates fast lane for digital health devices; JMIR Aging validates wearables for remote frailty and nutritional assessment</td>
-      </tr>
-      <tr>
-        <td class="date">19 April 2026</td>
-        <td class="link"><a href="brief-2026-04-19.html">19 April 2026</a></td>
-        <td class="topics">Protein gap in adults 75+ quantified (NHANES data); Sarcopenic obesity paradox deepens with multi-omics evidence; Gut microbiome longevity signatures replicated across 8 cohorts; FDA relaxes AI wellness tool and wearable oversight; Digital tools validated for remote frailty and nutritional status assessment</td>
-      </tr>
-      <tr>
-        <td class="date">18 April 2026</td>
-        <td class="link"><a href="brief-2026-04-18.html">18 April 2026</a></td>
-        <td class="topics">Diet quality vs. quantity and dementia risk (93k-person Neurology study); Sarcopenic obesity amplifies frailty outcomes; Article Galaxy MCP enables AI-driven literature acquisition; Gut microbiome therapeutics reach consensus; Frontiers AI publishing guidance across full publication lifecycle</td>
-      </tr>
-      <tr>
-        <td class="date">17 April 2026</td>
-        <td class="link"><a href="brief-2026-04-17.html">17 April 2026</a></td>
-        <td class="topics">Nature Reviews Endocrinology gut microbiome&ndash;ageing axes review; Stanford AI Index 2026 &mdash; only 5% of clinical AI studies use real patient data; EU AI Act full application August 2026 &amp; MHRA framework due; ICFSR 2026 integrates AI into frailty research; Manulife $350M Longevity Institute launch</td>
-      </tr>
-      <tr>
-        <td class="date">16 April 2026</td>
-        <td class="link"><a href="brief-2026-04-16.html">16 April 2026</a></td>
-        <td class="topics">Nature benchmark: AI agents at 50% human performance on complex tasks; FDA eases wearables &amp; CDS oversight; ARPA-H commits $144M to PROSPR ageing trials; Nature Reviews Endocrinology gut microbiome–ageing trajectories; Japan updates sarcopenia/frailty nutritional guidelines</td>
-      </tr>
-      <tr>
-        <td class="date">15 April 2026</td>
-        <td class="link"><a href="brief-2026-04-15.html">15 April 2026</a></td>
-        <td class="topics">Plant-based diet &amp; 12% lower dementia risk (93k-person study); Vitamin D midlife levels predict Alzheimer's tau 16 years later; Frontiers AI publishing framework; FDA reduces AI wearable oversight; Nature Reviews Endocrinology gut microbiome–ageing trajectories review</td>
-      </tr>
-      <tr>
-        <td class="date">14 April 2026</td>
-        <td class="link"><a href="brief-2026-04-14.html">14 April 2026</a></td>
-        <td class="topics">Plant-based diet &amp; dementia (Neurology); Article Galaxy MCP for AI literature access; FDA/EU AI regulation divergence; Sarcopenia–frailty meta-analysis; Gut microbiome ageing review (Nature Reviews Endocrinology)</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search briefing titles&hellip;" aria-label="Search briefings" />
+    <button id="clearBtn" onclick="clearSearch()">Clear</button>
+  </div>
+  <p id="noResults">No briefings match your search. Try a different keyword.</p>
+
+  <!-- Briefing list -->
+  <!-- ARCHIVE-LIST-START -->
+  <ul class="briefing-list" id="briefingList">
+
+    <li class="briefing-item" data-title="Week of 10 May 2026 GPT-5.5 Instant ChatGPT default OpenAI Grok Speech Text API Grok Imagine xAI Claude Opus 4.7 Anthropic SpaceX Colossus compute Claude Security Claude Code rate limits finance agent templates Gemini 4 Google IO Deep Research Max Workspace Intelligence Llama 4 Scout Maverick Behemoth Meta Cursor 3 Agent 365 Microsoft OWASP agentic AI safety regulation White House policy framework advertising ChatGPT Hiro acquisition Blackstone Goldman Sachs joint venture Amazon Bedrock Mistral partnership Simon Willison Ben's Bites The Rundown agentic engineering">
+      <a class="briefing-link" href="AI-Observer-2026-05-10.html">Week of 10 May 2026</a>
+      <span class="briefing-date">10 May 2026 &mdash; GPT-5.5 Instant becomes ChatGPT default &bull; Grok audio/video APIs debut &bull; Claude Opus 4.7 GA + SpaceX compute deal &bull; Gemini 4 previewed at Google I/O &bull; Llama 4 Behemoth preview &bull; Microsoft Agent 365 ships &bull; ChatGPT adds ads &bull; OWASP agentic AI security framework &bull; US federal AI policy framework</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 3 May 2026 GPT-5.5 Amazon Bedrock OpenAI Claude Opus 4.7 Claude Mythos Claude Security Claude Design Anthropic Project Glasswing Gemini 3 Deep Think Deep Research Max Gemini Embeddings 2 Google DeepMind Mistral Large 3 Le Chat Llama 4 Meta Muse Spark xAI Grok SpaceX Microsoft Agent 365 AWS Amazon Quick agentic AI governance enterprise deployment">
+      <a class="briefing-link" href="AI-Observer-2026-05-03.html">Week of 3 May 2026</a>
+      <span class="briefing-date">3 May 2026 &mdash; GPT-5.5 on Amazon Bedrock &bull; Claude Opus 4.7 GA + Claude Security launch &bull; Claude Mythos preview continues &bull; Gemini 3 Deep Think + Deep Research Max &bull; Muse Spark from Meta Superintelligence Labs &bull; SpaceX acquires xAI &bull; Microsoft Agent 365 ships &bull; Agentic task success rate hits 77%</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 26 April 2026 GPT-5.5 GPT-Rosalind OpenAI Claude Opus 4.7 Claude Mythos Claude Design Managed Agents ant CLI Anthropic Deep Research Deep Research Max Gemini 3.1 Flash-Lite Google Llama 4 Scout Maverick Muse Spark Meta LlamaCon Grok 5 xAI Cursor 3 Adobe Firefly Midjourney V8.1 Microsoft Copilot Claude Sonnet Teams SharePoint White House AI policy state regulation app store productivity agentic">
+      <a class="briefing-link" href="AI-Observer-2026-04-26.html">Week of 26 April 2026</a>
+      <span class="briefing-date">26 April 2026 &mdash; GPT-5.5 launches with agentic coding gains &bull; Claude Opus 4.7 GA with task budgets &bull; Google Deep Research Max + MCP &bull; Meta Muse Spark closed model &bull; Llama 4 Scout &amp; Maverick open-weight &bull; Cursor 3 multi-agent IDE &bull; White House national AI policy framework &bull; 600+ state AI bills introduced</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 19 April 2026 Claude Opus 4.7 Claude Design Project Glasswing GPT-5.4 Thinking GPT-Rosalind cybersecurity Gemini Robotics-ER 1.6 Boston Dynamics Meta Muse Spark Cursor Perplexity Comet Microsoft Copilot Mistral Large 3 Grok xAI physical AI robotics Benedict Evans Ethan Mollick">
+      <a class="briefing-link" href="AI-Observer-2026-04-19.html">Week of 19 April 2026</a>
+      <span class="briefing-date">19 April 2026 &mdash; Claude Opus 4.7 GA &amp; Claude Design launch &bull; Project Glasswing zero-day findings &bull; GPT-5.4 Thinking + GPT-Rosalind &bull; Gemini Robotics-ER 1.6 + Boston Dynamics &bull; Meta Muse Spark debut &bull; Cursor 3 agent-first IDE &bull; Grok 5 delayed to Q2 &bull; Physical AI breakout theme</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 12 April 2026 Claude Mythos Gemini 3.1 GPT-5.5 Grok 4.20 GLM-5.1 Claude Code Cursor GitHub Copilot MCP robotics NVIDIA">
+      <a class="briefing-link" href="AI-Observer-2026-04-12.html">Week of 12 April 2026</a>
+      <span class="briefing-date">12 April 2026 &mdash; Claude Mythos gated release &bull; Gemini 3.1 Pro leads 13 benchmarks &bull; GPT-5.5 pretraining complete &bull; Grok 4.20 multi-agent &bull; GLM-5.1 open-source 744B &bull; Claude Code reaches #1 &bull; MCP at 97M installs &bull; NVIDIA physical AI announcements</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 5 April 2026 GPT-5.4 Claude Sonnet 4.6 Gemma 4 Llama 4 Grok 4.20 Copilot agentic AI">
+      <a class="briefing-link" href="AI-Observer-2026-04-05.html">Week of 5 April 2026</a>
+      <span class="briefing-date">5 April 2026 &mdash; GPT-5.4 surpasses human benchmark &bull; Claude Sonnet 4.6 released &bull; Google Gemma 4 open models &bull; Meta Llama 4 launch &bull; Grok 4.20 multi-agent reasoning &bull; Microsoft Copilot shifts to paid model</span>
+    </li>
+
+    <li class="briefing-item" data-title="Week of 30 March 2026 Claude Mythos Gemini 3 Deep Think Sora API security">
+      <a class="briefing-link" href="AI-Observer-2026-03-30.html">Week of 30 March 2026</a>
+      <span class="briefing-date">30 March 2026 &mdash; Claude Mythos leak &bull; Gemini 3 Deep Think live &bull; Chinese state hacker incident &bull; Sora API discontinued</span>
+    </li>
+
+  </ul>
+  <!-- ARCHIVE-LIST-END -->
 
   <footer>
-    Last updated: 10 May 2026. Focus: Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy.
+    <p>AI Observer &mdash; Automated weekly briefing archive.</p>
   </footer>
 
+</div>
+
+<script>
+  const input = document.getElementById('searchInput');
+  const items = document.querySelectorAll('.briefing-item');
+  const noResults = document.getElementById('noResults');
+
+  function clearSearch() {
+    input.value = '';
+    filterBriefings('');
+    input.focus();
+  }
+
+  function highlight(text, term) {
+    if (!term) return text;
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark>$1</mark>');
+  }
+
+  function filterBriefings(term) {
+    const q = term.toLowerCase().trim();
+    let visibleCount = 0;
+
+    items.forEach(item => {
+      const titleEl = item.querySelector('.briefing-link');
+      const dateEl  = item.querySelector('.briefing-date');
+      const searchText = item.dataset.title.toLowerCase();
+
+      if (!q || searchText.includes(q)) {
+        item.classList.remove('hidden');
+        visibleCount++;
+        // Restore original text then highlight
+        titleEl.innerHTML = highlight(titleEl.textContent, term);
+      } else {
+        item.classList.add('hidden');
+        titleEl.innerHTML = titleEl.textContent; // reset
+      }
+    });
+
+    noResults.style.display = (q && visibleCount === 0) ? 'block' : 'none';
+  }
+
+  input.addEventListener('input', () => filterBriefings(input.value));
+
+  // Keyboard shortcut: Escape clears search
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') clearSearch();
+  });
+</script>
 </body>
 </html>

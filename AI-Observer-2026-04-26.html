@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Observer — Week of 26 April 2026</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+      color: #222;
+      background: #fafaf8;
+      line-height: 1.7;
+    }
+    header {
+      border-bottom: 2px solid #1a1a2e;
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      margin: 0 0 4px;
+      color: #1a1a2e;
+    }
+    header p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #1a1a2e;
+      border-left: 4px solid #4a90d9;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 20px 0 4px;
+      color: #333;
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+    }
+    .item p {
+      margin: 4px 0 8px;
+      font-size: 0.95rem;
+    }
+    .item a {
+      font-size: 0.85rem;
+      color: #2563a8;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #e8f0fb;
+      color: #1a4a8a;
+      border-radius: 3px;
+      padding: 1px 6px;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+    .summary-box {
+      background: #1a1a2e;
+      color: #f0f0f0;
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+    .summary-box strong { color: #9ecfff; }
+    footer {
+      margin-top: 60px;
+      padding-top: 16px;
+      border-top: 1px solid #ccc;
+      font-size: 0.82rem;
+      color: #888;
+    }
+    a { color: #2563a8; }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 0.9rem;
+      color: #555;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #1a1a2e; }
+  </style>
+</head>
+<body>
+
+<a class="back-link" href="index.html">← Back to archive</a>
+
+<header>
+  <h1>AI Observer — Week of 26 April 2026</h1>
+  <p>Weekly intelligence briefing on frontier AI models and tools &mdash; compiled Sunday 26 April 2026</p>
+</header>
+
+<div class="summary-box">
+  <strong>This week's highlights:</strong> OpenAI launches <strong>GPT-5.5</strong> — its most capable model yet, strong in agentic coding and computer use. Google's new <strong>Deep Research Max</strong> agents bring MCP support and native visualisations. Meta debuts <strong>Muse Spark</strong>, its first closed proprietary model, while Llama 4 Scout and Maverick continue open-weight momentum. Anthropic ships <strong>Claude Opus 4.7</strong> with better vision and task budgets. The US White House releases a national AI policy framework. Microsoft 365 Copilot adds Claude Sonnet and expands to Teams.
+</div>
+
+<!-- ─── FRONTIER MODELS ─────────────────────────────────────────── -->
+<h2>Frontier Models</h2>
+
+<div class="item">
+  <h3><span class="tag">OpenAI</span> GPT-5.5 Released</h3>
+  <p>OpenAI launched GPT-5.5 and GPT-5.5 Pro to the API on 24 April 2026. The new model is described as OpenAI's smartest and most intuitive model to date. It excels at agentic coding, computer use, knowledge work, and multi-step tasks requiring less guidance. GPT-5.5 matches GPT-5.4 per-token latency while using significantly fewer tokens to complete the same tasks. It is rolling out to Plus, Pro, Business and Enterprise subscribers.</p>
+  <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank">OpenAI announcement →</a><br>
+  <a href="https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html" target="_blank">CNBC coverage →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">OpenAI</span> GPT-Rosalind for Life Sciences</h3>
+  <p>OpenAI announced GPT-Rosalind on 16 April, a specialised model for life sciences research. This follows other domain-specific offerings including ChatGPT for Clinicians, reflecting OpenAI's strategy of tailoring frontier models to regulated industries.</p>
+  <a href="https://openai.com/news/" target="_blank">OpenAI news →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Anthropic</span> Claude Opus 4.7 Generally Available</h3>
+  <p>Anthropic shipped Claude Opus 4.7 on 16 April with a 12-point gain on CursorBench over 4.6. Key improvements include high-resolution image input (up to 2,576 pixels), a 1 million token context window, and new task budgets to prevent long-running agents silently consuming API quota. Priced at the same $5/$25 per million tokens as Opus 4.6.</p>
+  <a href="https://www.anthropic.com/news" target="_blank">Anthropic news →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Anthropic</span> Claude Mythos Preview</h3>
+  <p>Anthropic announced Claude Mythos Preview on 7 April, a new general-purpose model that performs strongly across benchmarks and shows particular strength in computer security tasks. Available as a restricted preview.</p>
+  <a href="https://red.anthropic.com/2026/mythos-preview/" target="_blank">Anthropic red team announcement →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Google</span> Deep Research and Deep Research Max</h3>
+  <p>Google unveiled two new autonomous research agents on 21 April, built on Gemini 3.1 Pro. Deep Research is optimised for speed in interactive surfaces; Deep Research Max targets maximum comprehensiveness for background workflows. Both support Model Context Protocol (MCP) to fuse public web data with private enterprise sources, and natively generate charts and infographics inline.</p>
+  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/" target="_blank">Google blog →</a><br>
+  <a href="https://siliconangle.com/2026/04/22/google-launches-ai-research-agents-powered-gemini-3-1-pro/" target="_blank">SiliconANGLE coverage →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Google</span> Gemini 3.1 Flash-Lite</h3>
+  <p>Google introduced Gemini 3.1 Flash-Lite, an efficiency-focused model delivering 2.5× faster responses and 45% faster output compared to earlier Gemini versions. Priced at $0.25 per million input tokens, it is aimed at high-volume, cost-sensitive applications.</p>
+  <a href="https://llm-stats.com/llm-updates" target="_blank">LLM Stats →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Meta</span> Llama 4 Scout and Maverick</h3>
+  <p>Meta launched Llama 4 Scout (17B parameters, runs on a single 24 GB GPU) and Llama 4 Maverick as open-weight, natively multimodal models using a Mixture-of-Experts architecture. Both support unprecedented context lengths and strong image and text understanding.</p>
+  <a href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank">Meta AI blog →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Meta</span> Muse Spark — First Proprietary Model</h3>
+  <p>In a significant strategic shift, Meta launched Muse Spark on 8 April — its first ever closed, proprietary model, built by Meta Superintelligence Labs. Available only at meta.ai with no open weights, Muse Spark scored 52 on the Artificial Analysis Intelligence Index (compared to 18 for Llama 4 Maverick). LlamaCon on 29 April is expected to bring further announcements.</p>
+  <a href="https://ai.meta.com/blog/llamacon-llama-news/" target="_blank">LlamaCon preview →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">xAI</span> Grok 5 — Still Awaited</h3>
+  <p>Grok 5 has not shipped as of this week. The current public flagship remains Grok 4.20 Beta 2 (released 3 March). Reports indicate Grok 5 will feature approximately 6 trillion parameters and a 1.5 million token context window. xAI's Colossus 2 cluster expanded to 1.5 gigawatts this month, a positive signal for readiness in Q2 2026.</p>
+  <a href="https://grok.com/release-notes" target="_blank">Grok release notes →</a>
+</div>
+
+<!-- ─── AI TOOLS ─────────────────────────────────────────────────── -->
+<h2>AI Tools &amp; Applications</h2>
+
+<div class="item">
+  <h3><span class="tag">Anthropic</span> Claude Design Launched</h3>
+  <p>Anthropic launched Claude Design, an experimental product for creating prototypes, slides, one-pagers, and other visuals. Claude mobile apps now support fully interactive content such as live charts and shareable assets rendered directly in conversations.</p>
+  <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" target="_blank">TechCrunch →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Anthropic</span> Managed Agents and ant CLI</h3>
+  <p>Anthropic introduced Managed Agents — a hosted Claude Platform service for long-horizon agentic tasks with stable interfaces for sessions, sandboxes, and harnesses. The ant CLI was also released, enabling command-line access to the Claude API with native Claude Code integration and YAML-based versioning of API resources.</p>
+  <a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank">Claude Platform release notes →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Microsoft</span> Copilot Updates — April 2026</h3>
+  <p>Microsoft 365 Copilot added Anthropic Claude Sonnet to Copilot Chat (Frontier), expanding model choice alongside OpenAI models. New features include: Copilot Chat across Teams chats, channels, and meetings; narrated highlight reels for meeting summaries; AI-managed metadata in SharePoint; slide-wide formatting in PowerPoint; and tracked-changes and comment management in Word.</p>
+  <a href="https://www.flotek.io/blog/microsoft-365-copilot-updates-april-2026" target="_blank">Flotek overview →</a><br>
+  <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" target="_blank">Microsoft release notes →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Google</span> Gemini Enterprise Acceleration Program</h3>
+  <p>Accenture and Google Cloud announced the Gemini Enterprise Acceleration Program on 22 April, aimed at helping large enterprises adopt agentic AI at scale. The program focuses on Gemini 3.1 Pro powered workflows.</p>
+  <a href="https://www.googlecloudpresscorner.com/2026-04-22-Accenture-and-Google-Cloud-Expand-Partnership-to-Scale-Agentic-Transformation-for-Global-Enterprises-with-Gemini-Enterprise" target="_blank">Google Cloud announcement →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Cursor</span> Cursor 3 — Multi-Agent IDE</h3>
+  <p>Cursor 3 shipped on 2 April, described as the biggest release since the company forked VS Code. The new Agents Window allows developers to run multiple AI agents in parallel across local machines, git worktrees, SSH, and cloud environments simultaneously.</p>
+  <a href="https://www.howdoiuseai.com/blog/2026-04-16-newest-ai-tools-2026" target="_blank">How Do I Use AI →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Adobe</span> Firefly AI Assistant</h3>
+  <p>Adobe unveiled the Firefly AI Assistant, a unified conversational interface that orchestrates complex, multi-step creative workflows across Creative Cloud apps. Users describe desired outcomes and the assistant executes them end-to-end.</p>
+  <a href="https://news.adobe.com/news/2026/04/adobe-new-creative-agent" target="_blank">Adobe press release →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Midjourney</span> V8.1 Ships</h3>
+  <p>Midjourney released V8.1, a stability-focused update to its image generation model. HD mode is now 3× faster and 3× cheaper than before, and has become the default for V8.1 generation.</p>
+  <a href="https://llm-stats.com/ai-news" target="_blank">LLM Stats →</a>
+</div>
+
+<!-- ─── POLICY & INDUSTRY ────────────────────────────────────────── -->
+<h2>Policy &amp; Industry</h2>
+
+<div class="item">
+  <h3><span class="tag">US Policy</span> White House National AI Policy Framework</h3>
+  <p>The Trump Administration released a National Policy Framework for Artificial Intelligence on 20 March (formally discussed in April). It recommends a single federal approach governed through existing regulatory agencies rather than a new AI regulator, with guardrails covering child safety, free speech, intellectual property, workforce impacts, and national security.</p>
+  <a href="https://www.consumerfinancemonitor.com/2026/04/08/the-white-houses-national-policy-framework-for-artificial-intelligence-what-it-means-and-what-comes-next/" target="_blank">Consumer Finance Monitor analysis →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">US Policy</span> State-Level AI Regulation Surge</h3>
+  <p>State lawmakers introduced over 600 AI bills in 2026 legislative sessions. Indiana, Utah, and Washington enacted laws prohibiting health insurers from using AI as the sole basis for denying or modifying medical claims. Congress also introduced bills on nonconsensual images, chatbots, and small business AI support.</p>
+  <a href="https://www.eversheds-sutherland.com/en/united-states/insights/gloabl-ai-bulletin-april-2026" target="_blank">Eversheds-Sutherland regulatory update →</a>
+</div>
+
+<div class="item">
+  <h3><span class="tag">Industry</span> App Store AI Boom</h3>
+  <p>AI-powered tools are driving a 104% surge in new app releases across Apple's App Store and Google Play in April 2026. Productivity apps entered the global top five for the first time in years. Industry observers note the trend is shifting from AI assistants to AI agents that can act autonomously on multi-step tasks.</p>
+  <a href="https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/" target="_blank">TechCrunch →</a>
+</div>
+
+<footer>
+  <p>AI Observer &mdash; Automated weekly briefing compiled 26 April 2026. Sources include OpenAI, Anthropic, Google DeepMind, Meta AI, xAI, Microsoft, Adobe, CNBC, TechCrunch, SiliconANGLE, and regulatory updates from Eversheds-Sutherland and Consumer Finance Monitor.</p>
+  <p style="margin-top:8px;"><a href="index.html">← Return to briefing archive</a></p>
+</footer>
+
+</body>
+</html>
