@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligence Brief — 16 May 2026</title>
+  <style>
+  /* ─── Solonutrition Brand System ─── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; background: #FAF0E0; color: #2C1A0A; padding: 0; min-height: 100vh; }
+  .sn-nav { background: #2C1A0A; padding: 12px 32px; display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #B8652A; }
+  .sn-nav-wordmark { font-size: 15px; font-weight: 800; color: #FAF0E0; letter-spacing: -.3px; }
+  .sn-nav-tag { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #D4843C; margin-left: 2px; }
+  .sn-nav-spacer { flex: 1; }
+  .sn-nav-pill { font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: #B8652A; color: #FAF0E0; padding: 4px 12px; border-radius: 20px; }
+  .sn-page { max-width: 880px; margin: 0 auto; padding: 40px 28px 60px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 28px; font-size: 0.82rem; font-weight: 700; color: #B8652A; text-decoration: none; letter-spacing: .03em; }
+  .back-link:hover { color: #D4843C; text-decoration: underline; }
+  .brief-header { background: #2C1A0A; border-radius: 16px; padding: 28px 32px 24px; margin-bottom: 32px; }
+  .brief-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #D4843C; margin-bottom: 8px; }
+  .brief-title { font-size: 24px; font-weight: 800; color: #FAF0E0; letter-spacing: -.4px; margin-bottom: 10px; line-height: 1.2; }
+  .brief-meta { font-size: 12px; color: #F5D4A0; line-height: 1.7; }
+  .brief-meta strong { color: #E8A85A; }
+  h2 { font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: #96583A; border-bottom: 1.5px solid rgba(44,26,10,0.15); padding-bottom: 8px; margin-top: 40px; margin-bottom: 20px; }
+  .item-card { background: #fff; border: 0.5px solid rgba(44,26,10,0.12); border-radius: 14px; padding: 22px 24px; margin-bottom: 18px; }
+  .item-card h3 { font-size: 16px; font-weight: 700; color: #2C1A0A; margin-bottom: 8px; line-height: 1.35; }
+  .item-meta { font-size: 11px; color: #96583A; margin-bottom: 14px; line-height: 1.6; }
+  .item-meta a { color: #B8652A; text-decoration: none; font-weight: 600; }
+  .item-meta a:hover { text-decoration: underline; color: #D4843C; }
+  .label { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #B8652A; margin-top: 14px; margin-bottom: 5px; display: block; }
+  p { font-size: 14px; color: #5C3418; line-height: 1.75; margin: 0 0 6px; }
+  ul.signals { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  ul.signals li { background: #fff; border: 0.5px solid rgba(44,26,10,0.1); border-radius: 12px; padding: 14px 18px 14px 42px; font-size: 13px; color: #5C3418; line-height: 1.65; position: relative; }
+  ul.signals li::before { content: ''; position: absolute; left: 16px; top: 20px; width: 8px; height: 8px; border-radius: 50%; background: #D4843C; }
+  ul.signals li strong { color: #2C1A0A; }
+  ol.priorities { list-style: none; padding: 0; counter-reset: priority-counter; display: flex; flex-direction: column; gap: 14px; }
+  ol.priorities li { counter-increment: priority-counter; background: #2C1A0A; border-radius: 14px; padding: 18px 20px 18px 56px; font-size: 13px; color: #F5D4A0; line-height: 1.7; position: relative; }
+  ol.priorities li::before { content: counter(priority-counter); position: absolute; left: 18px; top: 18px; width: 26px; height: 26px; border-radius: 50%; background: #B8652A; color: #FAF0E0; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; line-height: 26px; }
+  ol.priorities li strong { color: #E8A85A; }
+  .sn-footer { margin-top: 48px; padding-top: 16px; border-top: 1.5px solid rgba(44,26,10,0.15); font-size: 11px; color: #96583A; line-height: 1.7; }
+  </style>
+</head>
+<body>
+<nav class="sn-nav">
+  <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><rect width="120" height="120" rx="26" fill="#B8652A"/><circle cx="60" cy="42" r="18" fill="#FAF0E0"/><circle cx="60" cy="42" r="11" fill="#B8652A"/><circle cx="60" cy="42" r="5" fill="#D4843C"/><path d="M34 80 Q60 62 86 80" stroke="#FAF0E0" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M28 90 Q60 70 92 90" stroke="#FAF0E0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".45"/></svg>
+  <div>
+    <div class="sn-nav-wordmark">Solonutrition</div>
+    <div class="sn-nav-tag">Intelligence Brief</div>
+  </div>
+  <div class="sn-nav-spacer"></div>
+  <span class="sn-nav-pill">Nutrition Science for Seniors 75+</span>
+</nav>
+<div class="sn-page">
+  <a class="back-link" href="index.html">&#8592; Back to index</a>
+
+  <div class="brief-header">
+    <div class="brief-eyebrow">Solonutrition · Intelligence Brief</div>
+    <div class="brief-title">Intelligence Brief &mdash; 16 May 2026</div>
+    <div class="brief-meta">
+      <strong>Focus:</strong> Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy<br>
+      <strong>Period covered:</strong> Past 48 hours (14–16 May 2026)
+    </div>
+  </div>
+
+  <h2>Key Developments</h2>
+
+  <div class="item-card">
+    <h3>1. Restoring a Youthful Gut Microbiome Reversed Liver Ageing and Prevented Liver Cancer in Mice</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://www.sciencedaily.com/releases/2026/05/260509210643.htm" target="_blank">ScienceDaily — DDW 2026 Presentation (9 May 2026)</a> / <a href="https://www.natureworldnews.com/articles/72939/20260515/liver-aging-reversal-breakthrough-scientists-restore-youthful-function-young-gut-bacteria.htm" target="_blank">Nature World News (15 May 2026)</a></div>
+    <span class="label">What happened:</span>
+    <p>Research presented at Digestive Disease Week 2026 found that transplanting a mouse's own preserved youthful gut microbiome back into the same animal at older age reversed multiple hallmarks of liver ageing — including inflammation, fibrosis, mitochondrial decline, and DNA damage — and prevented liver cancer entirely. No tumours developed in transplanted mice, whereas hepatocellular carcinoma appeared in control animals. Critically, the study used each animal's own preserved microbiome rather than a donor's, minimising immune rejection and infection risk. The research team intends to begin human trials in the near future.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>The gut–liver axis is one of the most clinically significant pathways in ageing research, and this study provides the most direct causal evidence to date that microbiome composition — not just genetics or liver disease — drives hepatic ageing trajectories. For your 75+ audience, liver health is a silent concern: age-related liver dysfunction is strongly linked to metabolic disease, medication processing, and nutritional absorption. This finding strengthens the case for dietary intervention as a practical route to microbiome preservation — a message you can deliver clearly and credibly now, ahead of the commercial sector oversimplifying it.</p>
+    <span class="label">Second-order effect:</span>
+    <p>This study provides the mechanistic rationale for why dietary patterns that support microbiome diversity in mid-life may have compounding benefits that only become visible in the 75+ age group — making the case for earlier, sustained dietary intervention rather than reactive management in old age.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>2. Sarcopenia Combined with Frailty More Than Doubles Cardiovascular Disease Risk — Meta-Analysis of 2.3 Million Participants</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12576861/" target="_blank">Journal of Global Health — Combined effect of frailty and sarcopenia on CVD risk (2026)</a> / <a href="https://www.ahajournals.org/doi/10.1161/JAHA.124.040099" target="_blank">Journal of the American Heart Association (2026)</a></div>
+    <span class="label">What happened:</span>
+    <p>A large-scale meta-analysis published in 2026 drawing on data from approximately 2.3 million participants found that sarcopenia alone, frailty alone, and their co-occurrence each independently and progressively increase cardiovascular disease risk. Individuals with both conditions carried more than double the CVD risk compared to robust non-sarcopenic adults, with a hazard ratio of 3.29 for those who remained persistently frail over time. Frailty statistically mediated approximately 35% of the association between sarcopenia and CVD, confirming that these conditions share biological pathways — including chronic inflammation and endothelial dysfunction — rather than simply co-occurring by chance.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>A 2.3-million-participant meta-analysis gives the sarcopenia–cardiovascular disease link the same statistical weight as major cardiovascular risk factor evidence. For a 75+ population where both conditions are common, this means sarcopenia is no longer just a mobility and falls concern — it is a cardiovascular risk factor requiring nutritional and exercise intervention. This finding directly supports your advocacy for routine muscle mass assessment and protein-adequate dietary guidance in older adults, and gives your educational content a powerful clinical anchor.</p>
+    <span class="label">Second-order effect:</span>
+    <p>As cardiologists begin to treat sarcopenia as a modifiable cardiovascular risk factor, demand for nutritional interventions — specifically protein supplementation and resistance training guidance — in cardiac care settings will grow. This positions nutrition science professionals with expertise in the 75+ population at the intersection of geriatric and cardiovascular medicine.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>3. Elicit Now Supports PRISMA 2020 — AI-Assisted Systematic Reviews Are Now Reproducible and Auditable</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://elicit.com/solutions/systematic-review" target="_blank">Elicit — Systematic Review (updated 6 May 2026)</a> / <a href="https://aitoolranked.com/blog/elicit-review-best-ai-literature-review-tools" target="_blank">AI Tool Ranked — Elicit Review 2026</a></div>
+    <span class="label">What happened:</span>
+    <p>As of 6 May 2026, Elicit's systematic review tool now supports PRISMA 2020 guidelines and has been redesigned to be reproducible, traceable, and auditable at every step of the review process. Elicit searches across 138 million papers, extracts data into structured tables, and generates automated reports. Independent evaluations report 95% search recall and 97–99% screening accuracy. The platform costs from free to $49/month for professional use. A separate independent evaluation published in JMIR AI found that Elicit achieved 81.4% data extraction accuracy compared to 86.7% for human reviewers — a gap that was not statistically significant.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>PRISMA 2020 compliance means that systematic reviews produced with Elicit can now meet the minimum reporting standards required for publication and policy submission. For a non-profit nutrition science organisation producing evidence-based educational content, this reduces the resource cost of conducting rigorous literature reviews substantially. The 80% time saving reported by users is credible given the platform's capability profile. The accuracy parity with human reviewers at the screening stage means the tool is appropriate for initial evidence synthesis, with human expert review focused on interpretation rather than retrieval.</p>
+    <span class="label">Second-order effect:</span>
+    <p>PRISMA-compliant AI systematic review tools lower the barrier for smaller organisations to produce publication-quality evidence summaries — including in nutrition science. This will increase the volume of AI-assisted reviews entering peer-reviewed literature, making it progressively more important for readers and educators to understand whether a review was AI-assisted and how to evaluate its quality accordingly.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>4. Real-World Study: Mobile Health App Achieves 95% Medication Adherence in Adults Aged 65 and Over</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1716880/full" target="_blank">Frontiers in Digital Health — Mobile health apps for older adults: real-world evidence (2026)</a></div>
+    <span class="label">What happened:</span>
+    <p>A real-world evidence study published in Frontiers in Digital Health in 2026 examined engagement and medication adherence among 250 adults aged 65 and over (mean age 70.1 years) using the Perx Health mobile app. Median medication adherence reached 95.0%, verified via mobile Directly Observed Therapy — participants uploaded photos of themselves taking medications. The app used games, rewards, and social recognition to support adherence. Over 61% of participants were female and 61.6% were Australia-based. The study is notable for using objective verification methods rather than self-report alone, lending its adherence figures greater credibility than most app-based studies.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>Polypharmacy and poor medication adherence are major contributors to preventable hospitalisation in the 75+ population, and most digital health tools are designed and tested in younger cohorts. A real-world 95% adherence rate in a predominantly female, older adult population using a gamified app is a strong signal that well-designed mobile health tools can achieve meaningful behaviour change in your target demographic — extending the case for digital health literacy as a practical health intervention for seniors, not merely a technology aspiration.</p>
+    <span class="label">Second-order effect:</span>
+    <p>The gamification and social recognition elements that drove adherence in this study are design principles equally applicable to nutrition behaviour change tools — meal tracking, hydration reminders, and supplement regimens. The evidence base for this approach in older adults is now stronger, providing useful design guidance for any digital nutrition tool developed for the 75+ population.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>5. Protein Intake of 1.2 g/kg/day Outperforms Standard Recommendations for Preserving Muscle Mass in Sarcopenic Elderly Women</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12104658/" target="_blank">PMC / Frontiers in Nutrition — Protein intake and muscle mass in elderly females with sarcopenia (2026)</a></div>
+    <span class="label">What happened:</span>
+    <p>A randomised trial of 126 participants aged 60–75 years compared protein intakes of 0.8 g/kg body weight per day (the current standard recommendation) with 1.2 g/kg per day in elderly women with confirmed sarcopenia. The higher intake group showed significant gains in muscle strength and cross-sectional muscle area — particularly in the thigh and calf — alongside reductions in waist circumference and fat mass. MRI, handgrip, and knee flexion tests confirmed the differences. The study adds to a growing body of evidence that current dietary protein recommendations for older adults, set at 0.8 g/kg, are insufficient to prevent or reverse sarcopenia.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>The gap between the standard 0.8 g/kg recommendation and the 1.2 g/kg level shown to preserve muscle mass in this study is nutritionally and practically significant. For your 75+ female audience — who are at elevated sarcopenia risk and frequently consuming well below even the standard recommendation — this finding strengthens the case for explicit, accessible guidance on protein distribution across daily meals. This is a directly actionable educational message that does not require pharmaceutical intervention or medical supervision.</p>
+    <span class="label">Second-order effect:</span>
+    <p>As evidence accumulates that 0.8 g/kg is inadequate for older adults, pressure on national dietary guidelines to revise upward will grow. Organisations that have already been communicating higher protein targets to their 75+ audiences will be ahead of the official guidance — a credibility advantage when guidelines eventually shift.</p>
+  </div>
+
+  <h2>Signals Worth Watching</h2>
+  <ul class="signals">
+    <li><strong>Gut microbiome physical activity link confirmed in older adults (April 2026):</strong> Positive associations were found between <em>Prevotella copri</em>, moderate-to-vigorous physical activity, and physical function in older adults — while <em>Roseburia</em> species linked to better mobility and strength. This reinforces combined diet-and-exercise messaging for microbiome health in the 75+ group.</li>
+    <li><strong>Longevity biotech fundraising reaches $8–9 billion in 2026:</strong> Sector-wide longevity biotech investment has reached $8–9 billion in 2026, with Function Health's $298M Series B the largest disclosed private round. The commercialisation of longevity science is accelerating rapidly, increasing the volume of consumer-facing longevity claims your 75+ audience will encounter.</li>
+    <li><strong>FDA enforcement discretion for AI wellness tools — implications for nutrition apps:</strong> The January 2026 FDA guidance broadening enforcement discretion for non-invasive wellness AI tools means that a growing range of AI-powered nutrition, hydration, and supplement apps targeting older adults will not require FDA clearance. This reduces regulatory barriers for developers but also removes a layer of clinical quality assurance for your audience.</li>
+    <li><strong>Elicit evaluation in JMIR AI (2026):</strong> An independent evaluation found that neither Elicit nor Connected Papers captured the totality of results identified by a full PRISMA search in glaucoma systematic reviews — a useful calibration note for teams relying on AI tools for nutrition science evidence synthesis. Human expert oversight at the search design stage remains essential.</li>
+    <li><strong>EU AI Act Article 50 consultation closes 3 June 2026:</strong> Reminder from yesterday's brief: the window to submit evidence on AI transparency design for older adult health users closes in under three weeks.</li>
+  </ul>
+
+  <h2>The 3 Things to Think About Today</h2>
+  <ol class="priorities">
+    <li><strong>The gut–liver axis finding from DDW is the most significant new microbiome-ageing result of the past week — translate it before commercial interests do.</strong> The DDW mouse study showing that restoring a youthful gut microbiome reversed liver ageing and prevented liver cancer is being covered in science media this week, but is not yet widely translated for a lay audience. The finding is both striking and grounded in solid methodology (autologous microbiome transplant, eliminating immune confounds). Your organisation is well-placed to produce a clear, accurate explainer for your 75+ audience that contextualises the animal model caveat honestly while communicating the dietary implication: microbiome diversity built through diet across the lifespan appears to protect the liver in old age. The alternative is that supplement companies will frame this as an endorsement of probiotic products before the human trial data exists to support that claim.</li>
+    <li><strong>Sarcopenia is now a cardiovascular risk factor with the same statistical weight as hypertension or dyslipidaemia — your educational messaging should reflect this.</strong> The 2.3-million-participant meta-analysis confirming that sarcopenia more than doubles CVD risk when combined with frailty is not a niche geriatric finding — it is mainstream cardiovascular medicine. For your audience, this means that the dietary habits and exercise patterns that preserve muscle mass are now also cardiovascular protective behaviours. Reframing protein-adequate eating and resistance activity not just as "staying strong" but as "protecting your heart" substantially broadens the motivational case for your 75+ audience and aligns your educational content with where cardiovascular medicine is heading.</li>
+    <li><strong>Elicit's PRISMA 2020 update makes AI-assisted systematic review a practical option for your organisation's evidence work — but with clear limits.</strong> The independent accuracy evaluation (81.4% vs 86.7% for humans, not statistically significant at screening) confirms that Elicit is production-ready for literature retrieval and initial screening in nutrition science systematic reviews. The free-to-$49/month pricing means this is accessible without a dedicated research budget. The practical implication: Elicit can now reduce the time cost of producing rigorous evidence summaries for your educational content — but it cannot replace expert interpretation of what the evidence means for a 75+ population, which is where your organisation's value lies.</li>
+  </ol>
+
+  <div class="sn-footer">
+    Intelligence Brief &mdash; 16 May 2026 · Focus: Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy · Generated for Michael Rees, Founder/CEO · Solonutrition
+  </div>
+</div>
+</body>
+</html>
