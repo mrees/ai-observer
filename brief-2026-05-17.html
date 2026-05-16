@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligence Brief — 17 May 2026</title>
+  <style>
+  /* ─── Solonutrition Brand System ─── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; background: #FAF0E0; color: #2C1A0A; padding: 0; min-height: 100vh; }
+  .sn-nav { background: #2C1A0A; padding: 12px 32px; display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #B8652A; }
+  .sn-nav-wordmark { font-size: 15px; font-weight: 800; color: #FAF0E0; letter-spacing: -.3px; }
+  .sn-nav-tag { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #D4843C; margin-left: 2px; }
+  .sn-nav-spacer { flex: 1; }
+  .sn-nav-pill { font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: #B8652A; color: #FAF0E0; padding: 4px 12px; border-radius: 20px; }
+  .sn-page { max-width: 880px; margin: 0 auto; padding: 40px 28px 60px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 28px; font-size: 0.82rem; font-weight: 700; color: #B8652A; text-decoration: none; letter-spacing: .03em; }
+  .back-link:hover { color: #D4843C; text-decoration: underline; }
+  .brief-header { background: #2C1A0A; border-radius: 16px; padding: 28px 32px 24px; margin-bottom: 32px; }
+  .brief-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #D4843C; margin-bottom: 8px; }
+  .brief-title { font-size: 24px; font-weight: 800; color: #FAF0E0; letter-spacing: -.4px; margin-bottom: 10px; line-height: 1.2; }
+  .brief-meta { font-size: 12px; color: #F5D4A0; line-height: 1.7; }
+  .brief-meta strong { color: #E8A85A; }
+  h2 { font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: #96583A; border-bottom: 1.5px solid rgba(44,26,10,0.15); padding-bottom: 8px; margin-top: 40px; margin-bottom: 20px; }
+  .item-card { background: #fff; border: 0.5px solid rgba(44,26,10,0.12); border-radius: 14px; padding: 22px 24px; margin-bottom: 18px; }
+  .item-card h3 { font-size: 16px; font-weight: 700; color: #2C1A0A; margin-bottom: 8px; line-height: 1.35; }
+  .item-meta { font-size: 11px; color: #96583A; margin-bottom: 14px; line-height: 1.6; }
+  .item-meta a { color: #B8652A; text-decoration: none; font-weight: 600; }
+  .item-meta a:hover { text-decoration: underline; color: #D4843C; }
+  .label { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #B8652A; margin-top: 14px; margin-bottom: 5px; display: block; }
+  p { font-size: 14px; color: #5C3418; line-height: 1.75; margin: 0 0 6px; }
+  ul.signals { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  ul.signals li { background: #fff; border: 0.5px solid rgba(44,26,10,0.1); border-radius: 12px; padding: 14px 18px 14px 42px; font-size: 13px; color: #5C3418; line-height: 1.65; position: relative; }
+  ul.signals li::before { content: ''; position: absolute; left: 16px; top: 20px; width: 8px; height: 8px; border-radius: 50%; background: #D4843C; }
+  ul.signals li strong { color: #2C1A0A; }
+  ol.priorities { list-style: none; padding: 0; counter-reset: priority-counter; display: flex; flex-direction: column; gap: 14px; }
+  ol.priorities li { counter-increment: priority-counter; background: #2C1A0A; border-radius: 14px; padding: 18px 20px 18px 56px; font-size: 13px; color: #F5D4A0; line-height: 1.7; position: relative; }
+  ol.priorities li::before { content: counter(priority-counter); position: absolute; left: 18px; top: 18px; width: 26px; height: 26px; border-radius: 50%; background: #B8652A; color: #FAF0E0; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; line-height: 26px; }
+  ol.priorities li strong { color: #E8A85A; }
+  .sn-footer { margin-top: 48px; padding-top: 16px; border-top: 1.5px solid rgba(44,26,10,0.15); font-size: 11px; color: #96583A; line-height: 1.7; }
+  </style>
+</head>
+<body>
+<nav class="sn-nav">
+  <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><rect width="120" height="120" rx="26" fill="#B8652A"/><circle cx="60" cy="42" r="18" fill="#FAF0E0"/><circle cx="60" cy="42" r="11" fill="#B8652A"/><circle cx="60" cy="42" r="5" fill="#D4843C"/><path d="M34 80 Q60 62 86 80" stroke="#FAF0E0" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M28 90 Q60 70 92 90" stroke="#FAF0E0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".45"/></svg>
+  <div>
+    <div class="sn-nav-wordmark">Solonutrition</div>
+    <div class="sn-nav-tag">Intelligence Brief</div>
+  </div>
+  <div class="sn-nav-spacer"></div>
+  <span class="sn-nav-pill">Nutrition Science for Seniors 75+</span>
+</nav>
+<div class="sn-page">
+  <a class="back-link" href="index.html">&#8592; Back to index</a>
+
+  <div class="brief-header">
+    <div class="brief-eyebrow">Solonutrition · Intelligence Brief</div>
+    <div class="brief-title">Intelligence Brief &mdash; 17 May 2026</div>
+    <div class="brief-meta">
+      <strong>Focus:</strong> Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy<br>
+      <strong>Period covered:</strong> Past 48 hours (15–17 May 2026)
+    </div>
+  </div>
+
+  <h2>Key Developments</h2>
+
+  <div class="item-card">
+    <h3>1. Daily Multivitamin Slows Biological Ageing by Four Months — COSMOS Trial Published in Nature Medicine</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://www.nature.com/articles/s41591-026-04239-3" target="_blank">Nature Medicine — COSMOS Trial (published May 2026)</a> / <a href="https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/daily-multivitamin-use-may-slow-aging" target="_blank">Mass General Brigham press release</a></div>
+    <span class="label">What happened:</span>
+    <p>A two-year randomised controlled trial from Harvard and Mass General Brigham — the COSMOS study — assessed the effects of daily multivitamin-multimineral supplementation on five validated epigenetic ageing clocks in 958 healthy adults with an average chronological age of 70. Participants taking the multivitamin showed statistically significant slowing across all five clocks compared to placebo, equivalent to approximately four months of biological age reduction. Those who were biologically older than their chronological age at baseline benefited most, showing double the slowing on the PCGrimAge mortality-predictive clock — approximately 2.8 months. Results are published in Nature Medicine.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This is the strongest RCT evidence to date that a common, low-cost, accessible dietary supplement measurably slows biological ageing as assessed by epigenetic clocks predictive of mortality — in adults with an average age of 70. For your 75+ audience, the finding that those with accelerated biological ageing at baseline benefit most is directly relevant: this is precisely the population your organisation serves. It also positions multivitamin use not merely as a nutrient-gap filler but as a potential ageing intervention — a framing that requires careful, evidence-grounded communication to prevent supplement overclaiming.</p>
+    <span class="label">Second-order effect:</span>
+    <p>Publication in Nature Medicine will drive substantial media coverage and supplement marketing activity over the coming days. Your organisation is well-placed to publish a clear, calibrated interpretation for older adults — contextualising the four-month figure honestly and distinguishing what epigenetic clocks do and do not tell us about long-term health outcomes.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>2. Five Specific Nutrients Linked to Lower Dementia Risk in Prospective Cohort of 6,280 Older Adults</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://www.mdpi.com/2072-6643/17/12/1960" target="_blank">MDPI Nutrients — Nutrient-Wide Association Study for Dementia Risks (published May 2026)</a> / <a href="https://www.advisory.com/daily-briefing/2026/05/12/dementia-food" target="_blank">Advisory Daily Briefing — 12 May 2026</a></div>
+    <span class="label">What happened:</span>
+    <p>A prospective cohort study following 6,280 U.S. adults aged 50 and older for a mean of 6.76 years identified five nutrients significantly associated with reduced dementia risk: isorhamnetin (a plant flavonoid found in onions, capers, and pears), beta-tocopherol and beta-tocotrienol (forms of vitamin E), manganese, and AOAC dietary fibre. The study also identified eight nutrients associated with increased dementia risk, notably total sugars, lactose, and dairy-sourced vitamin D. Of 495 incident dementia cases identified over follow-up, dietary pattern — rather than supplementation — was the strongest modifiable predictor.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This study moves the dementia-nutrition conversation from broad dietary patterns to specific, identifiable nutrients — which is both an opportunity and a communication challenge. Your 75+ audience can act on concrete dietary sources (onions, nuts, seeds, wholegrains, legumes), but the finding that dairy vitamin D was associated with increased risk requires careful handling. Dairy-sourced vitamin D is a distinct compound from supplement-form cholecalciferol and this distinction matters enormously — conflating them could cause unnecessary alarm among older adults who rely on vitamin D supplementation for bone health.</p>
+    <span class="label">Second-order effect:</span>
+    <p>The finding on total sugars and dementia risk, read alongside last week's COSMOS multivitamin trial (above), points toward a composite picture: food-first dietary patterns rich in plant flavonoids and fibre, supplemented with a broad-spectrum multivitamin, represent the most evidence-grounded approach currently available for cognitive protection in older adults.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>3. Frailty and Sarcopenia Combined: New Causal Model Published in BMC Geriatrics</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://bioengineer.org/sarcopenias-role-in-frailty-a-new-model/" target="_blank">BioEngineer.org / BMC Geriatrics — May 2026</a></div>
+    <span class="label">What happened:</span>
+    <p>A new modelling study by Gao and Zhang, published in BMC Geriatrics, uses advanced statistical methods to map how sarcopenia (muscle deterioration) cascades into broader frailty via identifiable physiological pathways, with gender and comorbidities — particularly diabetes and cardiovascular conditions — functioning as significant moderating variables. The study proposes a practical framework for clinicians to identify which patients are most at risk of progression from sarcopenia to full frailty, based on their comorbidity profile. Researchers call for personalised intervention strategies rather than uniform frailty screening.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This fills an important gap: most existing research establishes that sarcopenia and frailty co-occur and share outcomes, but this model provides a causal pathway and highlights who is at greatest risk of progression. For your 75+ audience — who often have multiple comorbidities — the implication is clear: nutritional interventions need to be tailored to an individual's existing health conditions, not delivered as uniform advice. This reinforces the case for personalised nutrition guidance as your organisational approach.</p>
+    <span class="label">Second-order effect:</span>
+    <p>As gender is confirmed as a significant moderator of sarcopenia-to-frailty progression, there is a growing need for sex-specific dietary guidance in older adults — a gap your educational content could address before clinical bodies update their guidelines.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>4. FDA Rejects Industry Proposal to Reduce Oversight of AI Medical Devices</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://telehealth.org/news/fda-rejects-proposal-to-ease-oversight-of-ai-medical-devices/" target="_blank">Telehealth.org — May 2026</a></div>
+    <span class="label">What happened:</span>
+    <p>The U.S. Food and Drug Administration has rejected an industry proposal that would have reduced premarket review requirements for certain AI-enabled medical devices, maintaining existing oversight requirements for AI systems that influence diagnosis or treatment decisions. Patient safety advocates had argued that AI systems producing errors in clinical decision-making carry real risks, particularly for older and more vulnerable patient populations. This decision runs counter to the deregulatory pressure from parts of the medtech sector and follows earlier FDA guidance broadening enforcement discretion for non-invasive wellness tools.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This decision has direct implications for AI-powered nutrition and health tools designed for older adults. It signals that any AI tool positioning itself as influencing clinical or therapeutic decisions for a 75+ population will continue to face meaningful regulatory scrutiny — which is appropriate given this group's greater vulnerability to harmful advice. For your organisation, this regulatory stability provides a clearer boundary: educational and decision-support tools remain accessible, while diagnostic or prescriptive AI tools face a higher bar.</p>
+    <span class="label">Second-order effect:</span>
+    <p>The FDA's firmness here may accelerate a bifurcation in the digital health market between consumer wellness apps (lightly regulated) and clinical AI tools (tightly regulated) — a split that will shape which products your audience encounters and which carry credible safety assurances.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>5. EU AI Act: Political Agreement on AI Omnibus and Transparency Consultation Now Open</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank">European Commission — AI Act Update, 7–8 May 2026</a></div>
+    <span class="label">What happened:</span>
+    <p>On 7 May 2026, EU institutions reached political agreement on the AI omnibus legislative proposal, which amends and consolidates key provisions of the AI Act. On 8 May 2026, the European Commission opened a consultation on draft guidelines for AI transparency obligations under Article 50, which governs how AI systems must identify themselves to users. Rules affecting high-risk AI systems — including those used in health and social services — will apply from December 2027. The consultation on transparency guidelines closes 3 June 2026.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>For any AI-assisted nutrition tool or educational platform that reaches European users aged 75+, Article 50 transparency obligations are now moving from principle to enforceable guideline. You have 17 days — until 3 June 2026 — to engage with the transparency consultation if you wish to shape how guidelines are written for health-oriented AI tools used by older adults. This is a genuine policy window, not merely a monitoring note.</p>
+    <span class="label">Second-order effect:</span>
+    <p>The EU AI Act's high-risk classification for health AI systems may prompt UK regulators — particularly NICE and the MHRA — to accelerate their own analogous frameworks, with NHS digital health procurement standards likely to tighten in parallel from 2027 onward.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>6. AI-Powered Wearable Detects Frailty Through Gait Analysis — University of Arizona</h3>
+    <div class="item-meta"><strong>Source:</strong> <a href="https://news.arizona.edu/news/ai-powered-wearable-boosts-preventative-care-elderly" target="_blank">University of Arizona News / MedicalXpress</a></div>
+    <span class="label">What happened:</span>
+    <p>Researchers at the University of Arizona have developed an AI-powered wearable device that detects frailty in older adults by analysing gait data — specifically, subtle changes in walking patterns that precede clinical frailty presentations. The system is designed for continuous, passive monitoring and does not require active user engagement, which is significant for a 75+ population less comfortable with complex technology interfaces. The tool is positioned as a preventative care instrument rather than a diagnostic device, focusing on early-stage identification before falls or hospitalisation occur.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>Early frailty detection is one of the highest-value clinical opportunities in the 75+ population — it is the window in which nutritional and activity interventions can still reverse decline rather than manage it. A passive, gait-based wearable removes the compliance and usability barriers that have limited sensor adoption in this age group. If this technology reaches community use at scale, it creates a new referral pathway into nutritional education: patients flagged early as pre-frail who need clear, accessible dietary guidance.</p>
+    <span class="label">Second-order effect:</span>
+    <p>If gait-based frailty screening becomes routine — via wearable or smartphone camera — it will sharply increase the number of older adults identified as pre-frail at a point where nutritional intervention is still meaningful, creating substantial demand for credible dietary content at scale.</p>
+  </div>
+
+  <h2>Signals Worth Watching</h2>
+  <ul class="signals">
+    <li><strong>COSMOS multivitamin media cycle beginning:</strong> Nature Medicine publication of the COSMOS epigenetic ageing trial will drive heavy media coverage over the coming 48–72 hours. Supplement brands will move quickly to leverage the findings. Monitor for overclaiming and prepare a calibrated editorial response.</li>
+    <li><strong>Dementia-nutrients study identifies dairy vitamin D as a risk factor:</strong> The finding that dairy-sourced vitamin D (distinct from supplement-form cholecalciferol) was associated with increased dementia risk in the May 2026 prospective cohort study will cause confusion if not carefully explained. Clear educational content distinguishing dairy vitamin D from standard supplements is needed promptly.</li>
+    <li><strong>Longevity sector consumer funding concentrated in unvalidated products:</strong> Consumer longevity brands — Blueprint, Decode Age, L-Nutra — collectively raised $98.2M in recent rounds, signalling growing consumer appetite for longevity products that may not be evidence-based for a 75+ population. This creates an educational priority for your organisation.</li>
+    <li><strong>Wearables and fitness for adults 65+ confirmed as a top 2026 trend by ACSM:</strong> Commercial momentum in this space is now outpacing clinical evidence for the 75+ group specifically — a gap your organisation can credibly address.</li>
+    <li><strong>EU AI Act Article 50 consultation closes 3 June 2026:</strong> 17 days remain to formally respond to the European Commission's draft guidelines on AI transparency for health-facing tools. This is an actionable policy window.</li>
+  </ul>
+
+  <h2>The 3 Things to Think About Today</h2>
+  <ol class="priorities">
+    <li><strong>Publish a calibrated explainer on the COSMOS multivitamin finding — before the supplement industry distorts it.</strong> The Nature Medicine paper showing a daily multivitamin slows epigenetic ageing by four months in adults averaging age 70 will generate substantial media and marketing activity over the next 48–72 hours. Your organisation has a narrow window to publish a clear, honest interpretation for your 75+ audience — one that explains what epigenetic clocks measure, what a four-month slowing actually means clinically, and why the finding about accelerated agers benefiting most is the most practically significant detail. The supplement industry will use this paper to sell products; your role is to give older adults the information they need to make a genuinely informed decision.</li>
+    <li><strong>Address the dairy vitamin D and dementia finding carefully and quickly.</strong> The new prospective cohort study finding that dairy-sourced vitamin D was linked to increased dementia risk is likely to cause alarm among older adults who take vitamin D supplements — the most widely used supplement in the 75+ population. The critical distinction is that dairy vitamin D (a food-matrix compound) is chemically and metabolically distinct from supplement-form cholecalciferol or ergocalciferol. Conflating them could cause people to discontinue a supplement with strong evidence for bone health and fall prevention. A short, clear, reassuring but factually precise editorial response is needed today.</li>
+    <li><strong>The EU AI Act transparency consultation closes in 17 days — act now if you intend to engage.</strong> Article 50 of the EU AI Act, which governs how AI systems must identify themselves to users, is being translated into enforceable guidelines now. The consultation closes 3 June 2026. If your organisation uses any AI-assisted tools for nutrition education or health support that reaches European users — or advises partner organisations that do — submitting a short, evidence-grounded response advocating for transparency standards appropriate for older adult users is both feasible and strategically worthwhile. Draft a response this week while the window is open.</li>
+  </ol>
+
+  <div class="sn-footer">
+    Intelligence Brief &mdash; 17 May 2026 · Focus: Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy · Generated for Michael Rees, Founder/CEO · Solonutrition
+  </div>
+</div>
+</body>
+</html>
