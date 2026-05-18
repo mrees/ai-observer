@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligence Brief — 19 May 2026</title>
+  <style>
+  /* ─── Solonutrition Brand System ─── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; background: #FAF0E0; color: #2C1A0A; padding: 0; min-height: 100vh; }
+  .sn-nav { background: #2C1A0A; padding: 12px 32px; display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #B8652A; }
+  .sn-nav-wordmark { font-size: 15px; font-weight: 800; color: #FAF0E0; letter-spacing: -.3px; }
+  .sn-nav-tag { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #D4843C; margin-left: 2px; }
+  .sn-nav-spacer { flex: 1; }
+  .sn-nav-pill { font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: #B8652A; color: #FAF0E0; padding: 4px 12px; border-radius: 20px; }
+  .sn-page { max-width: 880px; margin: 0 auto; padding: 40px 28px 60px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 28px; font-size: 0.82rem; font-weight: 700; color: #B8652A; text-decoration: none; letter-spacing: .03em; }
+  .back-link:hover { color: #D4843C; text-decoration: underline; }
+  .brief-header { background: #2C1A0A; border-radius: 16px; padding: 28px 32px 24px; margin-bottom: 32px; }
+  .brief-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #D4843C; margin-bottom: 8px; }
+  .brief-title { font-size: 24px; font-weight: 800; color: #FAF0E0; letter-spacing: -.4px; margin-bottom: 10px; line-height: 1.2; }
+  .brief-meta { font-size: 12px; color: #F5D4A0; line-height: 1.7; }
+  .brief-meta strong { color: #E8A85A; }
+  h2 { font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: #96583A; border-bottom: 1.5px solid rgba(44,26,10,0.15); padding-bottom: 8px; margin-top: 40px; margin-bottom: 20px; }
+  .item-card { background: #fff; border: 0.5px solid rgba(44,26,10,0.12); border-radius: 14px; padding: 22px 24px; margin-bottom: 18px; }
+  .item-card h3 { font-size: 16px; font-weight: 700; color: #2C1A0A; margin-bottom: 8px; line-height: 1.35; }
+  .item-meta { font-size: 11px; color: #96583A; margin-bottom: 14px; line-height: 1.6; }
+  .item-meta a { color: #B8652A; text-decoration: none; font-weight: 600; }
+  .item-meta a:hover { text-decoration: underline; color: #D4843C; }
+  .label { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #B8652A; margin-top: 14px; margin-bottom: 5px; display: block; }
+  p { font-size: 14px; color: #5C3418; line-height: 1.75; margin: 0 0 6px; }
+  ul.signals { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  ul.signals li { background: #fff; border: 0.5px solid rgba(44,26,10,0.1); border-radius: 12px; padding: 14px 18px 14px 42px; font-size: 13px; color: #5C3418; line-height: 1.65; position: relative; }
+  ul.signals li::before { content: ''; position: absolute; left: 16px; top: 20px; width: 8px; height: 8px; border-radius: 50%; background: #D4843C; }
+  ul.signals li strong { color: #2C1A0A; }
+  ol.priorities { list-style: none; padding: 0; counter-reset: priority-counter; display: flex; flex-direction: column; gap: 14px; }
+  ol.priorities li { counter-increment: priority-counter; background: #2C1A0A; border-radius: 14px; padding: 18px 20px 18px 56px; font-size: 13px; color: #F5D4A0; line-height: 1.7; position: relative; }
+  ol.priorities li::before { content: counter(priority-counter); position: absolute; left: 18px; top: 18px; width: 26px; height: 26px; border-radius: 50%; background: #B8652A; color: #FAF0E0; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; line-height: 26px; }
+  ol.priorities li strong { color: #E8A85A; }
+  .sn-footer { margin-top: 48px; padding-top: 16px; border-top: 1.5px solid rgba(44,26,10,0.15); font-size: 11px; color: #96583A; line-height: 1.7; }
+  </style>
+</head>
+<body>
+<nav class="sn-nav">
+  <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><rect width="120" height="120" rx="26" fill="#B8652A"/><circle cx="60" cy="42" r="18" fill="#FAF0E0"/><circle cx="60" cy="42" r="11" fill="#B8652A"/><circle cx="60" cy="42" r="5" fill="#D4843C"/><path d="M34 80 Q60 62 86 80" stroke="#FAF0E0" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M28 90 Q60 70 92 90" stroke="#FAF0E0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".45"/></svg>
+  <div>
+    <div class="sn-nav-wordmark">Solonutrition</div>
+    <div class="sn-nav-tag">Intelligence Brief</div>
+  </div>
+  <div class="sn-nav-spacer"></div>
+  <span class="sn-nav-pill">Nutrition Science for Seniors 75+</span>
+</nav>
+<div class="sn-page">
+  <a class="back-link" href="index.html">&#8592; Back to index</a>
+
+  <div class="brief-header">
+    <div class="brief-eyebrow">Solonutrition · Intelligence Brief</div>
+    <div class="brief-title">Intelligence Brief &mdash; 19 May 2026</div>
+    <div class="brief-meta">
+      <strong>Focus:</strong> Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy<br>
+      <strong>Period covered:</strong> Past 48 hours (17–19 May 2026)
+    </div>
+  </div>
+
+  <h2>Key Developments</h2>
+
+  <div class="item-card">
+    <h3>1. Four Weeks of Dietary Change Shifts Biological Age Markers in Adults Aged 65–75 — University of Sydney</h3>
+    <div class="item-meta">
+      <strong>Source:</strong> <a href="https://www.sydney.edu.au/news-opinion/news/2026/05/12/dietary-changes-in-older-people-can-improve--biological-age-.html" target="_blank">University of Sydney / Aging Cell</a> &nbsp;|&nbsp; Published 12 May 2026
+    </div>
+    <span class="label">What happened:</span>
+    <p>Researchers at the University of Sydney found that adults aged 65–75 who reduced dietary fat or shifted toward more plant-based protein showed measurable reductions in biological age biomarkers after just four weeks. The study, published in <em>Aging Cell</em>, tested two distinct dietary strategies and found the strongest effects in a lower-fat, higher-carbohydrate pattern. Lead researcher Dr Caitlin Andrews emphasised these are early-stage findings, not proof that diet reverses ageing; longer-term studies are needed to assess disease risk outcomes.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This is directly relevant to your organisation's mission. The 65–75 age range is the entry point to your 75+ cohort, and a four-week intervention window is clinically practical. The finding that plant-based protein — not just quantity — drives the biomarker shift is a meaningful design signal for future dietary trials.</p>
+    <span class="label">Second-order effect:</span>
+    <p>If replicable, this creates a strong argument for nutritional biological age as a measurable primary endpoint in dietary RCTs for older adults — potentially increasing funder appetite for short-duration trials in your field.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>2. Plant-Based Diet Quality — Not Just Plant Foods — Determines Dementia Risk in Large Multiethnic Cohort</h3>
+    <div class="item-meta">
+      <strong>Source:</strong> <a href="https://www.neurology.org/doi/10.1212/WNL.0000000000214916" target="_blank">Neurology (AAN)</a> &nbsp;|&nbsp; Published April–May 2026 coverage
+    </div>
+    <span class="label">What happened:</span>
+    <p>A study published in <em>Neurology</em> analysed nearly 93,000 participants from the Multiethnic Cohort Study and found that eating a <em>high-quality</em> plant-based diet — whole grains, legumes, nuts, vegetables, and vegetable oils — is linked to significantly lower Alzheimer's disease and dementia risk. Critically, a low-quality plant-based diet (refined grains, fruit juices, potatoes, added sugars) may <em>increase</em> risk. Over the study period, more than 21,000 participants developed Alzheimer's or another dementia.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This is a direct warning against the common assumption that "plant-based" is automatically brain-protective. For your nutrition communications aimed at seniors, the distinction between quality and category of plant foods is essential — and this study gives you a large, ethnically diverse evidence base to draw on.</p>
+    <span class="label">Second-order effect:</span>
+    <p>Food manufacturers marketing low-quality plant-based products to health-conscious older adults may face increasing regulatory and reputational scrutiny as evidence like this accumulates.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>3. Google Launches Deep Research and Deep Research Max — Autonomous AI Research Agents Now Available via API</h3>
+    <div class="item-meta">
+      <strong>Source:</strong> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/" target="_blank">Google DeepMind Blog</a> &nbsp;|&nbsp; Launched 22 April 2026; API public preview ongoing
+    </div>
+    <span class="label">What happened:</span>
+    <p>Google launched two autonomous AI research agents — Deep Research and Deep Research Max — powered by Gemini 3.1 Pro. A single API call can trigger a full research workflow, pulling from both the open web and private data sources. Deep Research Max uses extended reasoning to produce long-form, sourced analytical reports. The system supports Model Context Protocol (MCP) for connecting proprietary databases, and natively generates charts and infographics. It scored 93.3% on DeepSearchQA benchmarks.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>This is the most capable autonomous research agent now generally available. For a research non-profit producing literature reviews, evidence syntheses, and regulatory analysis, this could meaningfully reduce staff hours spent on background research. It is worth a direct evaluation run against a current project.</p>
+    <span class="label">Second-order effect:</span>
+    <p>As tools like this become standard, the competitive advantage in research organisations will shift from information gathering to interpretation, synthesis, and clinical judgement — areas where domain expertise like yours becomes more, not less, valuable.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>4. Google DeepMind's AI Co-Clinician Matches Primary Care Physicians in Simulated Consultations — Phased Real-World Trials Beginning</h3>
+    <div class="item-meta">
+      <strong>Source:</strong> <a href="https://deepmind.google/blog/ai-co-clinician/" target="_blank">Google DeepMind</a> &nbsp;|&nbsp; Announced 30 April 2026
+    </div>
+    <span class="label">What happened:</span>
+    <p>Google DeepMind published research on its AI co-clinician — an AI designed to work alongside doctors rather than replace them — showing it matched primary care physicians in 68 of 140 assessed domains in a randomised, blinded crossover simulation involving 120 hypothetical telemedical encounters. The system, built on the AMIE model, is framed as a response to the WHO-projected global shortfall of over 10 million health workers by 2030. Real-world phased trials are now beginning across Australia, the US, India, Singapore, and the UAE.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>AI-assisted clinical consultations for older adults are no longer theoretical. For nutrition-focused care — where dietary history, multimorbidity, and frailty assessment are intertwined — AI tools that can structure complex consultations could significantly extend reach in underserved older adult populations.</p>
+    <span class="label">Second-order effect:</span>
+    <p>If AI co-clinicians become embedded in GP workflows, nutrition-specific guidance currently delivered through specialist referral may need to be encoded into AI clinical protocols — creating an important policy and standards opportunity for your organisation.</p>
+  </div>
+
+  <div class="item-card">
+    <h3>5. Consumer Wearable Data in Clinical Records: Apple Watch Dominates at 56%, but Integration Gaps Persist</h3>
+    <div class="item-meta">
+      <strong>Source:</strong> <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1784621/full" target="_blank">Frontiers in Digital Health</a> &nbsp;|&nbsp; Published May 2026
+    </div>
+    <span class="label">What happened:</span>
+    <p>A real-world study published in <em>Frontiers in Digital Health</em> examined patient engagement with consumer wearable devices linked to electronic health records. The Apple Watch accounted for 56% of connected devices, followed by the Oura ring (7.7%) and Fitbit (4.6%). Despite growing integration with EHRs, the study identified persistent barriers: short battery life, poor interoperability, lack of personalised settings, and inadequate clinical support as key friction points limiting sustained use — particularly in older adult populations.</p>
+    <span class="label">Why this matters to you:</span>
+    <p>The wearable landscape for older adults is still Apple Watch-dominated, but Oura's rapid rise to second place signals growing interest in passive, lower-burden monitoring — formats better suited to the 75+ population who may find watch interfaces demanding. This data is directly useful for informing digital health recommendations in your research programmes.</p>
+    <span class="label">Second-order effect:</span>
+    <p>EHR-integrated wearable data is increasingly available for research use — including in older adult cohorts — but the lack of interoperability standards means data pooling across sites remains a significant analytical challenge.</p>
+  </div>
+
+  <h2>Signals Worth Watching</h2>
+  <ul class="signals">
+    <li><strong>FDA Dual-Track AI Regulation:</strong> The FDA is simultaneously easing oversight of low-risk wellness AI tools (January 2026 guidance) while rejecting industry proposals to reduce premarket review of high-risk diagnostic AI — a bifurcated approach that will shape what nutrition and ageing AI products can reach market quickly versus face long regulatory timelines.</li>
+    <li><strong>Longitudinal Sarcopenia Risk Tool:</strong> A new study confirms that self-completed questionnaires covering physical function and mobility can independently predict sarcopenia risk — potentially enabling low-cost, scalable screening in community nutrition programmes without clinical testing.</li>
+    <li><strong>Life Biosciences Epigenetic Reprogramming Trial:</strong> The first FDA-approved partial de-ageing human clinical trial (Phase 1, David Sinclair co-founded company) is now enrolling patients, targeting age-related vision loss. Results expected late 2026 or early 2027 — watch for how epigenetic endpoints translate to human outcomes.</li>
+    <li><strong>AI Use in Research Publishing — Productivity vs. Breadth Trade-off:</strong> A study published in <em>Phys.org</em> found AI-using scientists publish 3x more papers and receive 5x more citations — but AI adoption across the research community has simultaneously reduced the diversity of scientific topics studied by 4.6% and reduced scientist-to-scientist collaboration by 22%.</li>
+  </ul>
+
+  <h2>The 3 Things to Think About Today</h2>
+  <ol class="priorities">
+    <li><strong>Dietary quality, not dietary category, is the new frontier for cognitive risk communication.</strong> The Neurology plant-based diet study settles an important question: recommending "more plants" to older adults is insufficient and potentially misleading. Your organisation should ensure all nutrition communications for the 75+ cohort explicitly address food quality within dietary patterns — not just food groups. This is a practical update to any existing educational materials.</li>
+    <li><strong>Four-week dietary intervention windows open new trial design possibilities.</strong> The University of Sydney findings, while preliminary, suggest that meaningful biological age markers can shift in as little as four weeks. For a research non-profit, this is a powerful argument when designing feasibility trials: shorter windows reduce dropout risk, lower cost, and can still generate publishable biomarker data. Consider whether your next protocol could incorporate biological age as a secondary endpoint.</li>
+    <li><strong>The AI research tool landscape has bifurcated: literature review tools are now research-grade, while autonomous research agents are now productised.</strong> Elicit (PRISMA 2020 compliant, 95% recall) handles systematic review workloads. Google Deep Research Max handles open-ended analytical research. These are complementary, not competing. A clear internal policy on when to use each — and how to verify outputs — would give your team a significant productivity advantage without compromising scientific rigour.</li>
+  </ol>
+
+  <div class="sn-footer">
+    Intelligence Brief &mdash; 19 May 2026 · Focus: Nutrition Science for Seniors 75+ | AI in Research | Digital Health | Health Policy · Generated for Michael Rees, Founder/CEO · Solonutrition
+  </div>
+</div>
+</body>
+</html>
